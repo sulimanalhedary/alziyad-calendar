@@ -52,7 +52,8 @@ const riyadhPhotos=[
 const diriyahPhotos=[
 {url:"https://commons.wikimedia.org/wiki/Special:FilePath/At-Turaif%20District%20in%20ad-Dir%27iyah%202025.jpg",label:"الدرعية",credit:"At-Turaif District • Wikimedia Commons • CC0"}
 ];
-let ti=new Date().getDate()%tips.length,theme=0,visualMode=new Date().getDate()%4,photoStep=0;
+const workPhotos=["work-exterior-night.jpg","work-garden.jpg","work-hall.jpg","work-interior.jpg","work-lighting.jpg","work-villa.jpg"];
+let ti=new Date().getDate()%tips.length,theme=0,visualMode=0,photoStep=0;
 function fmtHijri(d){try{return new Intl.DateTimeFormat('ar-SA-u-ca-islamic-umalqura',{day:'numeric',month:'long',year:'numeric'}).format(d)}catch(e){return "تعذر التحقق"}}
 function fmtGreg(d){return new Intl.DateTimeFormat('ar-SA-u-ca-gregory',{day:'numeric',month:'long',year:'numeric'}).format(d)}
 function fmtWeek(d){return new Intl.DateTimeFormat('ar-SA',{weekday:'long'}).format(d)}
@@ -65,7 +66,7 @@ renderTip();
 const payroll=[["2026-09-27","موعد صرف راتب سبتمبر 2026"],["2026-10-27","موعد صرف راتب أكتوبر 2026"],["2026-11-26","موعد صرف راتب نوفمبر 2026"],["2026-12-27","موعد صرف راتب ديسمبر 2026"]];
 function renderEvents(){let out=[],now=new Date(today.getFullYear(),today.getMonth(),today.getDate());payroll.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000);if(diff>=0&&diff<=30)out.push(`<div class="event tagged"><b>${n}</b><br><small>${fmtGreg(d)} • ${diff===0?'اليوم':'بعد '+diff+' يوم'}</small></div>`)});[["2026-09-23","اليوم الوطني السعودي"]].forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000);if(diff>=0&&diff<=30)out.push(`<div class="event tagged"><b>${n}</b><br><small>${fmtGreg(d)} • ${diff===0?'اليوم':'بعد '+diff+' يوم'}</small></div>`)});events.innerHTML=out.length?out.join(""):`<div class="event">لا توجد مناسبة موثقة قريبة معروضة حاليًا.</div>`}renderEvents();
 function currentVisual(){
- if(visualMode===0)return {url:tips[ti].photo,label:"من أعمالنا",credit:"إنشاءات الزياد"};
+ if(visualMode===0)return {url:workPhotos[photoStep%workPhotos.length],label:"من أعمالنا",credit:"إنشاءات الزياد"};
  if(visualMode===1)return riyadhPhotos[photoStep%riyadhPhotos.length];
  if(visualMode===2)return diriyahPhotos[photoStep%diriyahPhotos.length];
  return {url:"",label:"بطاقة اليوم",credit:"إنشاءات الزياد",clean:true};

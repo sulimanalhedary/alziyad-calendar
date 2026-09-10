@@ -15,17 +15,15 @@
 .dates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.datebox{background:var(--c);border-radius:14px;padding:12px}
 .datebox b{display:block;color:var(--g);font-size:12px;margin-bottom:5px}.datebox span{font-weight:800}
 .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#efe5d6;color:var(--b);font-size:12px;font-weight:700}
-h2{font-size:18px;color:var(--b);margin:0 0 12px}.prayers{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.prayer{background:#faf7f2;border:1px solid #eadfce;border-radius:12px;padding:10px;text-align:center}.prayer b{display:block;color:var(--b);font-size:12px}.prayer span{font-size:17px;font-weight:900}
-.notice{background:#fff7df;border:1px solid #ead397;border-radius:12px;padding:10px;font-size:12px;line-height:1.7;margin-top:10px}
+h2{font-size:18px;color:var(--b);margin:0 0 12px}
 .tip{background:var(--b);color:white}.tip h2{color:#ead8a0}.tiptext{font-size:18px;line-height:1.8;font-weight:700}
 .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}button{border:0;border-radius:13px;padding:13px;font-weight:800;font-size:14px;cursor:pointer}
 .primary{background:var(--b);color:#fff}.secondary{background:#d9c28b;color:#3b2a1f}.event{padding:10px 0;border-bottom:1px solid #eee}.event:last-child{border:0}.event small{color:#7c6d61}
 .source{font-size:11px;color:#786b60;line-height:1.6;margin-top:8px}.snap{aspect-ratio:9/16;max-width:390px;margin:12px auto 0;background:linear-gradient(165deg,#fff 0 60%,#eee4d4);border:3px solid var(--g);border-radius:22px;padding:20px;text-align:center;display:none}
 .snap.show{display:flex;flex-direction:column;justify-content:space-between}.snap .logo{width:90px}.snap .big{font-size:25px;font-weight:900;color:var(--b)}
-.snap .s-prayers{font-size:13px;line-height:2}.snap .s-tip{background:#5b3b28;color:#fff;padding:14px;border-radius:14px;line-height:1.7}
+.snap .s-tip{background:#5b3b28;color:#fff;padding:14px;border-radius:14px;line-height:1.7}
 .theme2{--b:#2f2925;--g:#b69b5c;--c:#f0ece6}.theme3{--b:#73533d;--g:#8e7b3f;--c:#f5eee4}
-@media(max-width:430px){.app{padding:9px}.prayers{grid-template-columns:repeat(3,1fr)}.dates{grid-template-columns:1fr}.day{font-size:24px}}
+@media(max-width:430px){.app{padding:9px}.dates{grid-template-columns:1fr}.day{font-size:24px}}
 </style>
 </head>
 <body><main class="app">
@@ -39,15 +37,6 @@ h2{font-size:18px;color:var(--b);margin:0 0 12px}.prayers{display:grid;grid-temp
 </div>
 </section>
 
-<section class="card"><h2>أوقات الصلاة • الرياض</h2>
-<div id="prayers" class="prayers">
-<div class="prayer"><b>الفجر</b><span>—</span></div><div class="prayer"><b>الشروق</b><span>—</span></div>
-<div class="prayer"><b>الظهر</b><span>—</span></div><div class="prayer"><b>العصر</b><span>—</span></div>
-<div class="prayer"><b>المغرب</b><span>—</span></div><div class="prayer"><b>العشاء</b><span>—</span></div>
-</div>
-<div id="prayerNotice" class="notice">لا نعرض مواقيت غير موثقة. هذه النسخة لا تستخدم مصدرًا تجاريًا أو حسابًا تقديريًا. عند عدم توفر اتصال بمصدر رسمي معتمد تبقى المواقيت فارغة بدل التخمين.</div>
-</section>
-
 <section class="card tip"><span id="tipType" class="badge">معلومة فنية</span><h2>فائدة اليوم</h2><div id="tipText" class="tiptext"></div>
 <div class="actions"><button class="secondary" onclick="nextTip()">تغيير الفائدة</button><button class="secondary" onclick="changeTheme()">تغيير المظهر</button></div>
 </section>
@@ -57,7 +46,7 @@ h2{font-size:18px;color:var(--b);margin:0 0 12px}.prayers{display:grid;grid-temp
 </section>
 
 <section class="card"><h2>بطاقة السناب</h2><div class="actions"><button class="primary" onclick="makeSnap()">معاينة بطاقة السناب</button><button class="secondary" onclick="shareSnap()">مشاركة البطاقة</button></div>
-<div id="snap" class="snap"><div><img src="logo.jpg" class="logo"><div class="big" id="sDay"></div><div id="sDates"></div></div><div id="sPrayers" class="s-prayers"></div><div><div id="sType" class="badge"></div><div id="sTip" class="s-tip"></div></div><small>إنشاءات الزياد للمقاولات</small></div>
+<div id="snap" class="snap"><div><img src="logo.jpg" class="logo"><div class="big" id="sDay"></div><div id="sDates"></div></div><div><div id="sType" class="badge"></div><div id="sTip" class="s-tip"></div></div><small>إنشاءات الزياد للمقاولات</small></div>
 </section>
 </main>
 <script>
@@ -91,12 +80,17 @@ const payroll=[
 ["2026-09-27","موعد صرف راتب سبتمبر 2026"],["2026-10-27","موعد صرف راتب أكتوبر 2026"],
 ["2026-11-26","موعد صرف راتب نوفمبر 2026"],["2026-12-27","موعد صرف راتب ديسمبر 2026"]
 ];
+function daysUntil(d){
+ const a=Date.UTC(today.getFullYear(),today.getMonth(),today.getDate());
+ const b=Date.UTC(d.getFullYear(),d.getMonth(),d.getDate());
+ return Math.round((b-a)/86400000);
+}
 function renderEvents(){
- let out=[], now=new Date(today.getFullYear(),today.getMonth(),today.getDate());
- payroll.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000); if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});
+ let out=[];
+ payroll.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=daysUntil(d); if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});
  // Fixed national dates; lunar-sensitive religious occasions intentionally omitted until officially confirmed.
  const fixed=[["2026-09-23","اليوم الوطني السعودي"]];
- fixed.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000);if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});
+ fixed.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=daysUntil(d);if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});
  events.innerHTML=out.length?out.join(""):`<div class="event">لا توجد مناسبة موثقة قريبة معروضة حاليًا.</div>`;
 }
 renderEvents();
@@ -104,8 +98,6 @@ renderEvents();
 function makeSnap(){
  snap.classList.add("show");sDay.textContent=weekday.textContent;sDates.textContent=hijri.textContent+" هـ • "+greg.textContent+" م";
  sType.textContent=tipType.textContent;sTip.textContent=tipText.textContent;
- const vals=[...document.querySelectorAll("#prayers .prayer")].map(x=>x.innerText.replace("\n"," "));
- sPrayers.textContent=vals.some(x=>!x.includes("—"))?vals.join(" • "):"أوقات الصلاة لا تُعرض حتى التحقق من المصدر الرسمي.";
  snap.scrollIntoView({behavior:"smooth"});
 }
 async function shareSnap(){

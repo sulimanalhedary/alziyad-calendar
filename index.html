@@ -6,105 +6,96 @@
 <title>تقويم إنشاءات الزياد</title>
 <link rel="manifest" href="manifest.webmanifest">
 <style>
-:root{--b:#5b3b28;--g:#a58b43;--c:#f6f0e7;--w:#fff;--t:#2d251f}
+:root{--b:#5b3b28;--g:#a58b43;--c:#f6f0e7;--w:#fff;--t:#2d251f;--muted:#76685d}
 *{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#eee8df;color:var(--t)}
-.app{max-width:760px;margin:auto;padding:14px}.hero,.card{background:#fff;border-radius:20px;padding:18px;margin-bottom:12px;box-shadow:0 4px 18px #00000010}
-.hero{text-align:center;background:linear-gradient(145deg,#fff,#f7f0e6);border-top:5px solid var(--g)}
-.logo{width:110px;max-height:90px;object-fit:contain}.brand{font-weight:800;color:var(--b);font-size:22px}
-.sub{color:#76685d;font-size:13px;margin-top:4px}.day{font-size:28px;font-weight:900;color:var(--b);margin-top:14px}
-.dates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.datebox{background:var(--c);border-radius:14px;padding:12px}
-.datebox b{display:block;color:var(--g);font-size:12px;margin-bottom:5px}.datebox span{font-weight:800}
-.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#efe5d6;color:var(--b);font-size:12px;font-weight:700}
-h2{font-size:18px;color:var(--b);margin:0 0 12px}
-.tip{background:var(--b);color:white}.tip h2{color:#ead8a0}.tiptext{font-size:18px;line-height:1.8;font-weight:700}
-.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}button{border:0;border-radius:13px;padding:13px;font-weight:800;font-size:14px;cursor:pointer}
-.primary{background:var(--b);color:#fff}.secondary{background:#d9c28b;color:#3b2a1f}.event{padding:10px 0;border-bottom:1px solid #eee}.event:last-child{border:0}.event small{color:#7c6d61}
-.source{font-size:11px;color:#786b60;line-height:1.6;margin-top:8px}.snap{aspect-ratio:9/16;max-width:390px;margin:12px auto 0;background:linear-gradient(165deg,#fff 0 60%,#eee4d4);border:3px solid var(--g);border-radius:22px;padding:20px;text-align:center;display:none}
-.snap.show{display:flex;flex-direction:column;justify-content:space-between}.snap .logo{width:90px}.snap .big{font-size:25px;font-weight:900;color:var(--b)}
-.snap .s-tip{background:#5b3b28;color:#fff;padding:14px;border-radius:14px;line-height:1.7}
+.app{max-width:760px;margin:auto;padding:14px}.hero,.card{background:#fff;border-radius:24px;padding:20px;margin-bottom:14px;box-shadow:0 5px 22px #0000000d}
+.hero{text-align:center;background:linear-gradient(145deg,#fff,#f7f0e6);border-top:6px solid var(--g)}
+.logo{width:120px;max-height:92px;object-fit:contain}.brand{font-weight:800;color:var(--b);font-size:25px;margin-top:4px}.sub{color:var(--muted);font-size:14px;margin-top:5px}.day{font-size:32px;font-weight:900;color:var(--b);margin-top:16px}
+.dates{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.datebox{background:var(--c);border-radius:18px;padding:14px}.datebox b{display:block;color:var(--g);font-size:13px;margin-bottom:7px}.datebox span{font-weight:800;font-size:18px}
+.badge{display:inline-block;padding:7px 12px;border-radius:999px;background:#efe5d6;color:var(--b);font-size:13px;font-weight:700}h2{font-size:22px;color:var(--b);margin:0 0 14px}.tip{background:var(--b);color:white}.tip h2{color:#ead8a0;margin-top:8px}.tiptext{font-size:20px;line-height:1.95;font-weight:700}
+.actions{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:15px}button{border:0;border-radius:15px;padding:14px;font-weight:800;font-size:15px;cursor:pointer}.primary{background:var(--b);color:#fff}.secondary{background:#ddc78f;color:#3b2a1f}.ghost{background:#f2ece3;color:var(--b);border:1px solid #e5d9c8}
+.event{padding:14px 0;border-bottom:1px solid #eee}.event:last-child{border:0}.event b{font-size:18px}.event small{color:#7c6d61;font-size:14px}.event.tagged{background:#fbf7f1;border-radius:16px;padding:14px;margin:10px 0;border:1px solid #eee0cc}.source{font-size:12px;color:#786b60;line-height:1.8;margin-top:10px}
+.snap-wrap{display:none;margin-top:14px}.snap-wrap.show{display:block}.snap{aspect-ratio:9/16;max-width:390px;margin:auto;position:relative;border:3px solid var(--g);border-radius:26px;overflow:hidden;background:#f6f0e7;box-shadow:0 7px 25px #00000015}.snap-bg{position:absolute;inset:0;background-size:cover;background-position:center}.snap-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,12,6,.06) 0%,rgba(20,12,6,.12) 42%,rgba(20,12,6,.68) 100%)}
+.snap.clean .snap-bg{background:linear-gradient(165deg,#fff 0 60%,#eee4d4)}.snap.clean .snap-bg::after{display:none}.snap-top,.snap-bottom{position:absolute;z-index:2;left:0;right:0;padding:22px;text-align:center}.snap-top{top:0}.snap-bottom{bottom:0;color:#fff}.snap.clean .snap-bottom{color:var(--t)}.snap .logo{width:92px;background:#ffffffd9;border-radius:8px;padding:4px}.snap .big{font-size:30px;font-weight:900;color:#fff;text-shadow:0 2px 8px #0007;margin-top:9px}.snap.clean .big{color:var(--b);text-shadow:none}.snap-date{font-size:16px;font-weight:700;color:#fff;text-shadow:0 2px 6px #0007;line-height:1.7}.snap.clean .snap-date{color:var(--t);text-shadow:none}.snap-type{margin-bottom:9px}.snap-tip{background:#5b3b28e8;color:#fff;padding:15px 16px;border-radius:18px;line-height:1.85;font-size:18px;font-weight:700;backdrop-filter:blur(4px)}.snap-credit{font-size:12px;margin-top:14px;opacity:.95}.snap-label{position:absolute;z-index:3;top:18px;left:18px;background:#ffffffdd;color:var(--b);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}
+.share-result{display:none;margin:14px auto 0;max-width:390px}.share-result.show{display:block}.share-result img{width:100%;border-radius:20px;border:1px solid #ddd}.share-note{font-size:12px;color:#6e6258;text-align:center;margin-top:7px}.install{display:none;width:100%;margin-top:10px}.install.show{display:block}
 .theme2{--b:#2f2925;--g:#b69b5c;--c:#f0ece6}.theme3{--b:#73533d;--g:#8e7b3f;--c:#f5eee4}
-@media(max-width:430px){.app{padding:9px}.dates{grid-template-columns:1fr}.day{font-size:24px}}
+@media(max-width:430px){.app{padding:9px}.dates{grid-template-columns:1fr}.day{font-size:27px}.brand{font-size:23px}.tiptext{font-size:18px}.actions{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body><main class="app">
 <section class="hero">
-<img src="logo.jpg" class="logo" onerror="this.style.display='none'">
-<div class="brand">تقويم إنشاءات الزياد</div><div class="sub">الرياض • بطاقة اليوم</div>
-<div id="weekday" class="day">—</div>
-<div class="dates">
-<div class="datebox"><b>التاريخ الهجري • أم القرى</b><span id="hijri">—</span></div>
-<div class="datebox"><b>التاريخ الميلادي</b><span id="greg">—</span></div>
-</div>
+<img src="logo.jpg" class="logo" alt="شعار إنشاءات الزياد"><div class="brand">تقويم إنشاءات الزياد</div><div class="sub">الرياض • بطاقة اليوم</div>
+<div id="weekday" class="day">—</div><div class="dates"><div class="datebox"><b>التاريخ الهجري • أم القرى</b><span id="hijri">—</span></div><div class="datebox"><b>التاريخ الميلادي</b><span id="greg">—</span></div></div>
+<button id="installBtn" class="install ghost">📲 أضف التقويم إلى الشاشة الرئيسية</button>
 </section>
-
-<section class="card tip"><span id="tipType" class="badge">معلومة فنية</span><h2>فائدة اليوم</h2><div id="tipText" class="tiptext"></div>
-<div class="actions"><button class="secondary" onclick="nextTip()">تغيير الفائدة</button><button class="secondary" onclick="changeTheme()">تغيير المظهر</button></div>
-</section>
-
-<section class="card"><h2>المناسبات والمواعيد القريبة</h2><div id="events"></div>
-<div class="source">لا تظهر المناسبة الدينية الحساسة على أنها مؤكدة قبل صدور إعلان رسمي. مواعيد الرواتب المدرجة لعام 2026 مأخوذة من وزارة المالية، مع التنبيه الرسمي بأنها قابلة للتغيير.</div>
-</section>
-
-<section class="card"><h2>بطاقة السناب</h2><div class="actions"><button class="primary" onclick="makeSnap()">معاينة بطاقة السناب</button><button class="secondary" onclick="shareSnap()">مشاركة البطاقة</button></div>
-<div id="snap" class="snap"><div><img src="logo.jpg" class="logo"><div class="big" id="sDay"></div><div id="sDates"></div></div><div><div id="sType" class="badge"></div><div id="sTip" class="s-tip"></div></div><small>إنشاءات الزياد للمقاولات</small></div>
-</section>
+<section class="card tip"><span id="tipType" class="badge">معلومة فنية</span><h2>فائدة اليوم</h2><div id="tipText" class="tiptext"></div><div class="actions"><button class="secondary" onclick="nextTip()">تغيير الفائدة</button><button class="secondary" onclick="changeTheme()">تغيير المظهر</button></div></section>
+<section class="card"><h2>المناسبات والمواعيد القريبة</h2><div id="events"></div><div class="source">تعرض المواعيد الرسمية الثابتة فقط. المناسبات الدينية المرتبطة بثبوت الرؤية لا تُعرض على أنها مؤكدة قبل الإعلان الرسمي.</div></section>
+<section class="card"><h2>بطاقة السناب</h2><div class="actions"><button class="primary" onclick="makeSnap()">معاينة البطاقة</button><button class="secondary" onclick="cyclePhoto()">تغيير الصورة</button></div><div class="actions"><button class="primary" onclick="shareSnapImage()">مشاركة كصورة</button><button class="ghost" onclick="cycleVisualMode()">تغيير نوع المحتوى</button></div>
+<div id="snapWrap" class="snap-wrap"><div id="snap" class="snap"><div id="snapBg" class="snap-bg"></div><div id="snapLabel" class="snap-label"></div><div class="snap-top"><img src="logo.jpg" class="logo"><div class="big" id="sDay"></div><div id="sDates" class="snap-date"></div></div><div class="snap-bottom"><div id="sType" class="badge snap-type"></div><div id="sTip" class="snap-tip"></div><div class="snap-credit">إنشاءات الزياد للمقاولات</div></div></div></div>
+<div id="shareResult" class="share-result"><img id="generatedCard" alt="بطاقة السناب الجاهزة"><div class="share-note">إذا لم تظهر نافذة المشاركة في جهازك، اضغط مطولًا على الصورة واحفظها ثم أرسلها في السناب.</div></div></section>
 </main>
 <script>
 const tips=[
-["معلومة فنية","قبل تنفيذ العزل في دورات المياه، تُعالج الزوايا ومخارج المواسير بعناية لأنها من أكثر نقاط احتمالية التسرب."],
-["نصيحة تنفيذية","لا تبدأ أعمال الدهان النهائي قبل التأكد من جفاف اللياسة ومعالجة مصادر الرطوبة؛ جودة الطبقة الأخيرة تبدأ من السطح تحتها."],
-["من خبرتنا","ترتيب مراحل التشطيب يوفر الوقت والتكلفة: الأعمال المخفية أولًا، ثم الأسطح، ثم التركيبات النهائية والحماية."],
-["معلومة فنية","عند استلام البلاط، افحص اختلاف درجات اللون والمقاسات قبل التركيب ووزّع الكراتين من أكثر من دفعة عند الحاجة."],
-["نصيحة تنفيذية","في الإضاءة المعمارية، جرّب عينة فعلية في الموقع ليلًا قبل اعتماد الكمية؛ لون الجدار وارتفاع السقف يغيران النتيجة."],
-["من خبرتنا","التوثيق بالصور قبل إغلاق الجبس أو البلاط يساعد لاحقًا في معرفة مسارات الكهرباء والسباكة ويقلل أعمال التكسير."],
-["معلومة فنية","الميول حول صفايات الأرضيات تُختبر بالماء قبل إنهاء التسليم، وليس بالنظر فقط."],
-["نصيحة تنفيذية","قبل تركيب الحجر الخارجي، اعتمد عينة مكتملة تشمل اللون والفرز والفواصل وطريقة التثبيت؛ العينة مرجع التنفيذ."],
-["من خبرتنا","المعاينة المبكرة لمواقع مخارج التكييف والإنارة تمنع كثيرًا من التعارضات بعد إغلاق الأسقف."]
+{type:"معلومة فنية",text:"قبل تنفيذ العزل في دورات المياه، تُعالج الزوايا ومخارج المواسير بعناية لأنها من أكثر نقاط احتمالية التسرب.",photo:"assets/work-garden.jpg"},
+{type:"نصيحة تنفيذية",text:"لا تبدأ أعمال الدهان النهائي قبل التأكد من جفاف اللياسة ومعالجة مصادر الرطوبة؛ جودة الطبقة الأخيرة تبدأ من السطح تحتها.",photo:"assets/work-interior.jpg"},
+{type:"من خبرتنا",text:"ترتيب مراحل التشطيب يوفر الوقت والتكلفة: الأعمال المخفية أولًا، ثم الأسطح، ثم التركيبات النهائية والحماية.",photo:"assets/work-villa.jpg"},
+{type:"معلومة فنية",text:"عند استلام البلاط، افحص اختلاف درجات اللون والمقاسات قبل التركيب ووزّع الكراتين من أكثر من دفعة عند الحاجة.",photo:"assets/work-interior.jpg"},
+{type:"نصيحة تنفيذية",text:"في الإضاءة المعمارية، جرّب عينة فعلية في الموقع ليلًا قبل اعتماد الكمية؛ لون الجدار وارتفاع السقف يغيران النتيجة.",photo:"assets/work-lighting.jpg"},
+{type:"من خبرتنا",text:"التوثيق بالصور قبل إغلاق الجبس أو البلاط يساعد لاحقًا في معرفة مسارات الكهرباء والسباكة ويقلل أعمال التكسير.",photo:"assets/work-hall.jpg"},
+{type:"معلومة فنية",text:"الميول حول صفايات الأرضيات تُختبر بالماء قبل إنهاء التسليم، وليس بالنظر فقط.",photo:"assets/work-garden.jpg"},
+{type:"نصيحة تنفيذية",text:"قبل تركيب الحجر الخارجي، اعتمد عينة مكتملة تشمل اللون والفرز والفواصل وطريقة التثبيت؛ العينة مرجع التنفيذ.",photo:"assets/work-exterior-night.jpg"},
+{type:"من خبرتنا",text:"المعاينة المبكرة لمواقع مخارج التكييف والإنارة تمنع كثيرًا من التعارضات بعد إغلاق الأسقف.",photo:"assets/work-lighting.jpg"}
 ];
-let ti=new Date().getDate()%tips.length, theme=0;
-function fmtHijri(d){
- try{return new Intl.DateTimeFormat('ar-SA-u-ca-islamic-umalqura',{day:'numeric',month:'long',year:'numeric'}).format(d)}
- catch(e){return "تعذر التحقق"}
-}
+const riyadhPhotos=[
+{url:"https://commons.wikimedia.org/wiki/Special:FilePath/Riyadh_Skyline_(Kingdom_Center).jpg",label:"الرياض",credit:"Riyadh Skyline • B.alotaby • CC BY-SA 4.0"}
+];
+const diriyahPhotos=[
+{url:"https://commons.wikimedia.org/wiki/Special:FilePath/At-Turaif%20District%20in%20ad-Dir%27iyah%202025.jpg",label:"الدرعية",credit:"At-Turaif District • Wikimedia Commons • CC0"}
+];
+let ti=new Date().getDate()%tips.length,theme=0,visualMode=new Date().getDate()%4,photoStep=0;
+function fmtHijri(d){try{return new Intl.DateTimeFormat('ar-SA-u-ca-islamic-umalqura',{day:'numeric',month:'long',year:'numeric'}).format(d)}catch(e){return "تعذر التحقق"}}
 function fmtGreg(d){return new Intl.DateTimeFormat('ar-SA-u-ca-gregory',{day:'numeric',month:'long',year:'numeric'}).format(d)}
 function fmtWeek(d){return new Intl.DateTimeFormat('ar-SA',{weekday:'long'}).format(d)}
 const today=new Date();
-weekday.textContent=fmtWeek(today); hijri.textContent=fmtHijri(today); greg.textContent=fmtGreg(today);
-function renderTip(){tipType.textContent=tips[ti][0];tipText.textContent=tips[ti][1]}
+weekday.textContent=fmtWeek(today);hijri.textContent=fmtHijri(today);greg.textContent=fmtGreg(today);
+function renderTip(){tipType.textContent=tips[ti].type;tipText.textContent=tips[ti].text;if(snapWrap.classList.contains('show'))makeSnap()}
 function nextTip(){ti=(ti+1)%tips.length;renderTip()}
 function changeTheme(){theme=(theme+1)%3;document.body.className=theme===1?'theme2':theme===2?'theme3':''}
 renderTip();
-
-// Officially sourced 2026 payroll dates (Saudi Ministry of Finance).
-const payroll=[
-["2026-09-27","موعد صرف راتب سبتمبر 2026"],["2026-10-27","موعد صرف راتب أكتوبر 2026"],
-["2026-11-26","موعد صرف راتب نوفمبر 2026"],["2026-12-27","موعد صرف راتب ديسمبر 2026"]
-];
-function daysUntil(d){
- const a=Date.UTC(today.getFullYear(),today.getMonth(),today.getDate());
- const b=Date.UTC(d.getFullYear(),d.getMonth(),d.getDate());
- return Math.round((b-a)/86400000);
+const payroll=[["2026-09-27","موعد صرف راتب سبتمبر 2026"],["2026-10-27","موعد صرف راتب أكتوبر 2026"],["2026-11-26","موعد صرف راتب نوفمبر 2026"],["2026-12-27","موعد صرف راتب ديسمبر 2026"]];
+function renderEvents(){let out=[],now=new Date(today.getFullYear(),today.getMonth(),today.getDate());payroll.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000);if(diff>=0&&diff<=30)out.push(`<div class="event tagged"><b>${n}</b><br><small>${fmtGreg(d)} • ${diff===0?'اليوم':'بعد '+diff+' يوم'}</small></div>`)});[["2026-09-23","اليوم الوطني السعودي"]].forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000);if(diff>=0&&diff<=30)out.push(`<div class="event tagged"><b>${n}</b><br><small>${fmtGreg(d)} • ${diff===0?'اليوم':'بعد '+diff+' يوم'}</small></div>`)});events.innerHTML=out.length?out.join(""):`<div class="event">لا توجد مناسبة موثقة قريبة معروضة حاليًا.</div>`}renderEvents();
+function currentVisual(){
+ if(visualMode===0)return {url:tips[ti].photo,label:"من أعمالنا",credit:"إنشاءات الزياد"};
+ if(visualMode===1)return riyadhPhotos[photoStep%riyadhPhotos.length];
+ if(visualMode===2)return diriyahPhotos[photoStep%diriyahPhotos.length];
+ return {url:"",label:"بطاقة اليوم",credit:"إنشاءات الزياد",clean:true};
 }
-function renderEvents(){
- let out=[];
- payroll.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=daysUntil(d); if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});
- // Fixed national dates; lunar-sensitive religious occasions intentionally omitted until officially confirmed.
- const fixed=[["2026-09-23","اليوم الوطني السعودي"]];
- fixed.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=daysUntil(d);if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});
- events.innerHTML=out.length?out.join(""):`<div class="event">لا توجد مناسبة موثقة قريبة معروضة حاليًا.</div>`;
-}
-renderEvents();
-
+function cyclePhoto(){photoStep++; if(visualMode===3)visualMode=0; makeSnap()}
+function cycleVisualMode(){visualMode=(visualMode+1)%4;photoStep=0;makeSnap()}
 function makeSnap(){
- snap.classList.add("show");sDay.textContent=weekday.textContent;sDates.textContent=hijri.textContent+" هـ • "+greg.textContent+" م";
- sType.textContent=tipType.textContent;sTip.textContent=tipText.textContent;
- snap.scrollIntoView({behavior:"smooth"});
+ const v=currentVisual();snapWrap.classList.add('show');snap.classList.toggle('clean',!!v.clean);snapBg.style.backgroundImage=v.url?`url("${v.url}")`:'';snapLabel.textContent=v.label;
+ sDay.textContent=weekday.textContent;sDates.textContent=`${hijri.textContent} • ${greg.textContent}`;sType.textContent=tipType.textContent;sTip.textContent=tipText.textContent;
+ snapWrap.scrollIntoView({behavior:'smooth',block:'start'});
 }
-async function shareSnap(){
- makeSnap();
- const text=`${weekday.textContent}\n${hijri.textContent} هـ\n${greg.textContent} م\n\n${tipType.textContent}: ${tipText.textContent}\n\nإنشاءات الزياد للمقاولات`;
- if(navigator.share){try{await navigator.share({title:"بطاقة اليوم | إنشاءات الزياد",text});}catch(e){}}
- else{navigator.clipboard?.writeText(text);alert("تم نسخ محتوى البطاقة للمشاركة.");}
+function loadImage(src){return new Promise((resolve,reject)=>{const im=new Image();im.crossOrigin='anonymous';im.onload=()=>resolve(im);im.onerror=reject;im.src=src})}
+function wrapText(ctx,text,maxWidth){const words=text.split(' '),lines=[];let line='';for(const word of words){const test=line?line+' '+word:word;if(ctx.measureText(test).width>maxWidth&&line){lines.push(line);line=word}else line=test}if(line)lines.push(line);return lines}
+async function buildStoryBlob(){
+ const W=1080,H=1920,c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d');const v=currentVisual();
+ x.fillStyle='#f6f0e7';x.fillRect(0,0,W,H);
+ if(v.url){try{const im=await loadImage(v.url);const scale=Math.max(W/im.width,H/im.height),dw=im.width*scale,dh=im.height*scale;x.drawImage(im,(W-dw)/2,(H-dh)/2,dw,dh)}catch(e){x.fillStyle='#efe6d9';x.fillRect(0,0,W,H)}}
+ const g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'rgba(30,16,8,.06)');g.addColorStop(.48,'rgba(30,16,8,.12)');g.addColorStop(1,'rgba(30,16,8,.78)');if(v.url){x.fillStyle=g;x.fillRect(0,0,W,H)}
+ try{const logo=await loadImage('logo.jpg');const lw=230,lh=logo.height*(lw/logo.width);x.fillStyle='rgba(255,255,255,.90)';x.roundRect((W-lw-40)/2,55,lw+40,lh+22,18);x.fill();x.drawImage(logo,(W-lw)/2,66,lw,lh)}catch(e){}
+ x.direction='rtl';x.textAlign='center';x.fillStyle=v.url?'#fff':'#5b3b28';x.font='bold 78px Tahoma,Arial';x.fillText(weekday.textContent,W/2,330);x.font='bold 39px Tahoma,Arial';x.fillText(`${hijri.textContent} • ${greg.textContent}`,W/2,400);
+ x.font='bold 34px Tahoma,Arial';const label=v.label||'بطاقة اليوم';x.fillStyle='rgba(255,255,255,.92)';x.roundRect(55,55,190,62,31);x.fill();x.fillStyle='#5b3b28';x.fillText(label,150,98);
+ const boxY=1320,boxH=420;x.fillStyle='rgba(91,59,40,.94)';x.roundRect(75,boxY,W-150,boxH,34);x.fill();x.fillStyle='#f3e7c6';x.font='bold 34px Tahoma,Arial';x.fillText(tipType.textContent,W/2,boxY+75);x.fillStyle='#fff';x.font='bold 45px Tahoma,Arial';const lines=wrapText(x,tipText.textContent,W-250);let yy=boxY+155;for(const line of lines.slice(0,5)){x.fillText(line,W/2,yy);yy+=76}
+ x.font='32px Tahoma,Arial';x.fillStyle=v.url?'#fff':'#5b3b28';x.fillText('إنشاءات الزياد للمقاولات',W/2,1845);
+ return await new Promise(res=>c.toBlob(res,'image/jpeg',.92));
 }
-if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+async function shareSnapImage(){
+ makeSnap();const blob=await buildStoryBlob();if(!blob){alert('تعذر تجهيز الصورة.');return}const file=new File([blob],`بطاقة-الزياد-${today.toISOString().slice(0,10)}.jpg`,{type:'image/jpeg'});
+ if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:'بطاقة اليوم | إنشاءات الزياد'});return}catch(e){}}
+ const url=URL.createObjectURL(blob);generatedCard.src=url;shareResult.classList.add('show');shareResult.scrollIntoView({behavior:'smooth'});
+}
+let deferredPrompt=null;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;installBtn.classList.add('show')});installBtn.addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;installBtn.classList.remove('show')});
+if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script></body></html>

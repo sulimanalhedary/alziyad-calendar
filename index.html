@@ -8,67 +8,31 @@
 <style>
 :root{--b:#5b3b28;--g:#a58b43;--c:#f6f0e7;--w:#fff;--t:#2d251f}
 *{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#eee8df;color:var(--t)}
-.app{max-width:760px;margin:auto;padding:14px}.hero,.card{background:#fff;border-radius:20px;padding:18px;margin-bottom:12px;box-shadow:0 4px 18px #00000010}
+.app{max-width:760px;margin:auto;padding:14px}.hero,.card{background:#fff;border-radius:22px;padding:18px;margin-bottom:14px;box-shadow:0 4px 18px #00000010}
 .hero{text-align:center;background:linear-gradient(145deg,#fff,#f7f0e6);border-top:5px solid var(--g)}
-.photoCard{position:relative;overflow:hidden;border-radius:22px;min-height:390px;margin-bottom:12px;box-shadow:0 6px 22px #0002;background:#3d3129}
-.photoCard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.photoShade{position:absolute;inset:0;background:linear-gradient(180deg,#0001 25%,#000b 100%)}
-.photoContent{position:absolute;inset:auto 16px 16px;z-index:2;color:white;text-align:right}
-.photoTag{display:inline-block;background:#ffffffdf;color:#5b3b28;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}
-.photoTitle{font-size:26px;font-weight:900;margin:10px 0 4px;text-shadow:0 2px 8px #0008}.photoSub{font-size:13px;opacity:.95}
-.photoNav{display:flex;gap:8px;margin-top:12px}.photoNav button{padding:9px 12px;background:#ffffffdd;color:#4b3528}
-.eventHero{background:linear-gradient(135deg,#fff7e6,#f2e2bd);border:1px solid #dfc88d;border-radius:18px;padding:16px;margin-bottom:10px}.eventHero strong{display:block;font-size:21px;color:var(--b)}.count{font-size:28px;font-weight:900;color:var(--b);margin:5px 0}
-.logo{width:110px;max-height:90px;object-fit:contain}.brand{font-weight:800;color:var(--b);font-size:22px}
-.sub{color:#76685d;font-size:13px;margin-top:4px}.day{font-size:28px;font-weight:900;color:var(--b);margin-top:14px}
-.dates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.datebox{background:var(--c);border-radius:14px;padding:12px}
-.datebox b{display:block;color:var(--g);font-size:12px;margin-bottom:5px}.datebox span{font-weight:800}
-.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#efe5d6;color:var(--b);font-size:12px;font-weight:700}
-h2{font-size:18px;color:var(--b);margin:0 0 12px}.prayers{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.prayer{background:#faf7f2;border:1px solid #eadfce;border-radius:12px;padding:10px;text-align:center}.prayer b{display:block;color:var(--b);font-size:12px}.prayer span{font-size:17px;font-weight:900}
-.notice{background:#fff7df;border:1px solid #ead397;border-radius:12px;padding:10px;font-size:12px;line-height:1.7;margin-top:10px}
-.tip{background:var(--b);color:white}.tip h2{color:#ead8a0}.tiptext{font-size:18px;line-height:1.8;font-weight:700}
-.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}button{border:0;border-radius:13px;padding:13px;font-weight:800;font-size:14px;cursor:pointer}
-.primary{background:var(--b);color:#fff}.secondary{background:#d9c28b;color:#3b2a1f}.event{padding:10px 0;border-bottom:1px solid #eee}.event:last-child{border:0}.event small{color:#7c6d61}
-.source{font-size:11px;color:#786b60;line-height:1.6;margin-top:8px}.snap{aspect-ratio:9/16;max-width:390px;margin:12px auto 0;background:linear-gradient(165deg,#fff 0 60%,#eee4d4);border:3px solid var(--g);border-radius:22px;padding:20px;text-align:center;display:none}
-.snap.show{display:flex;flex-direction:column;justify-content:space-between}.snap .logo{width:90px}.snap .big{font-size:25px;font-weight:900;color:var(--b)}
-.snap .s-prayers{font-size:13px;line-height:2}.snap .s-tip{background:#5b3b28;color:#fff;padding:14px;border-radius:14px;line-height:1.7}
+.logo{width:110px;max-height:90px;object-fit:contain}.brand{font-weight:800;color:var(--b);font-size:22px}.sub{color:#76685d;font-size:13px;margin-top:4px}.day{font-size:28px;font-weight:900;color:var(--b);margin-top:14px}
+.dates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.datebox{background:var(--c);border-radius:14px;padding:12px}.datebox b{display:block;color:var(--g);font-size:12px;margin-bottom:5px}.datebox span{font-weight:800}
+/* الصورة الآن أكبر وتظهر كاملة دون قص */
+.photoCard{position:relative;overflow:hidden;border-radius:24px;margin-bottom:14px;box-shadow:0 6px 22px #0002;background:#1f1b18;min-height:560px;display:flex;align-items:center;justify-content:center}
+.photoCard img{display:block;width:100%;height:auto;max-height:78vh;object-fit:contain;background:#1f1b18}
+.photoShade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#000b 100%);pointer-events:none}
+.photoContent{position:absolute;inset:auto 16px 16px;z-index:2;color:white;text-align:right}.photoTag{display:inline-block;background:#ffffffeb;color:#5b3b28;padding:7px 12px;border-radius:999px;font-size:13px;font-weight:800}.photoTitle{font-size:30px;font-weight:900;margin:10px 0 4px;text-shadow:0 2px 8px #0008}.photoSub{font-size:14px;opacity:.96}.photoNav{display:flex;gap:8px;margin-top:12px}.photoNav button{padding:10px 14px;background:#ffffffea;color:#4b3528}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#efe5d6;color:var(--b);font-size:12px;font-weight:700}h2{font-size:18px;color:var(--b);margin:0 0 12px}
+.prayers{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.prayer{background:#faf7f2;border:1px solid #eadfce;border-radius:12px;padding:10px;text-align:center}.prayer b{display:block;color:var(--b);font-size:12px}.prayer span{font-size:17px;font-weight:900}.notice{background:#fff7df;border:1px solid #ead397;border-radius:12px;padding:10px;font-size:12px;line-height:1.7;margin-top:10px}
+.tip{background:var(--b);color:white}.tip h2{color:#ead8a0}.tiptext{font-size:18px;line-height:1.8;font-weight:700}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}button{border:0;border-radius:13px;padding:13px;font-weight:800;font-size:14px;cursor:pointer}.primary{background:var(--b);color:#fff}.secondary{background:#d9c28b;color:#3b2a1f}
+.event{padding:10px 0;border-bottom:1px solid #eee}.event:last-child{border:0}.event small{color:#7c6d61}.eventHero{background:linear-gradient(135deg,#fff7e6,#f2e2bd);border:1px solid #dfc88d;border-radius:18px;padding:16px;margin-bottom:10px}.eventHero strong{display:block;font-size:21px;color:var(--b)}.source{font-size:11px;color:#786b60;line-height:1.6;margin-top:8px}
+.snapWrap{display:none;margin-top:14px}.snapWrap.show{display:block}.snapCanvas{width:100%;max-width:390px;display:block;margin:0 auto;border-radius:22px;box-shadow:0 7px 24px #0002;background:#fff}.snapStatus{text-align:center;font-size:12px;color:#76685d;margin-top:8px}
 .theme2{--b:#2f2925;--g:#b69b5c;--c:#f0ece6}.theme3{--b:#73533d;--g:#8e7b3f;--c:#f5eee4}
-@media(max-width:430px){.app{padding:9px}.prayers{grid-template-columns:repeat(3,1fr)}.dates{grid-template-columns:1fr}.day{font-size:24px}}
+@media(max-width:430px){.app{padding:9px}.dates{grid-template-columns:1fr}.day{font-size:24px}.photoCard{min-height:500px}.photoTitle{font-size:27px}}
 </style>
 </head>
 <body><main class="app">
-<section class="hero">
-<img src="logo.jpg" class="logo" onerror="this.style.display='none'">
-<div class="brand">تقويم إنشاءات الزياد</div><div class="sub">الرياض • بطاقة اليوم</div>
-<div id="weekday" class="day">—</div>
-<div class="dates">
-<div class="datebox"><b>التاريخ الهجري • أم القرى</b><span id="hijri">—</span></div>
-<div class="datebox"><b>التاريخ الميلادي</b><span id="greg">—</span></div>
-</div>
-</section>
-
-<section class="photoCard" id="photoCard"><img id="dayPhoto" alt="صورة من منطقة الرياض"><div class="photoShade"></div><div class="photoContent"><span id="photoTag" class="photoTag"></span><div id="photoTitle" class="photoTitle"></div><div id="photoSub" class="photoSub"></div><div class="photoNav"><button onclick="nextPhoto()">الصورة التالية</button></div></div></section>
-
-<section class="card"><h2>أوقات الصلاة • الرياض</h2>
-<div id="prayers" class="prayers">
-<div class="prayer"><b>الفجر</b><span>—</span></div><div class="prayer"><b>الشروق</b><span>—</span></div>
-<div class="prayer"><b>الظهر</b><span>—</span></div><div class="prayer"><b>العصر</b><span>—</span></div>
-<div class="prayer"><b>المغرب</b><span>—</span></div><div class="prayer"><b>العشاء</b><span>—</span></div>
-</div>
-<div id="prayerNotice" class="notice">لا نعرض مواقيت غير موثقة. هذه النسخة لا تستخدم مصدرًا تجاريًا أو حسابًا تقديريًا. عند عدم توفر اتصال بمصدر رسمي معتمد تبقى المواقيت فارغة بدل التخمين.</div>
-</section>
-
-<section class="card tip"><span id="tipType" class="badge">معلومة فنية</span><h2>فائدة اليوم</h2><div id="tipText" class="tiptext"></div>
-<div class="actions"><button class="secondary" onclick="nextTip()">تغيير الفائدة</button><button class="secondary" onclick="changeTheme()">تغيير المظهر</button></div>
-</section>
-
-<section class="card"><h2>المناسبات والمواعيد القريبة</h2><div id="events"></div>
-<div class="source">لا تظهر المناسبة الدينية الحساسة على أنها مؤكدة قبل صدور إعلان رسمي. مواعيد الرواتب المدرجة لعام 2026 مأخوذة من وزارة المالية، مع التنبيه الرسمي بأنها قابلة للتغيير.</div>
-</section>
-
-<section class="card"><h2>بطاقة السناب</h2><div class="actions"><button class="primary" onclick="makeSnap()">معاينة بطاقة السناب</button><button class="secondary" onclick="shareSnap()">مشاركة البطاقة</button></div>
-<div id="snap" class="snap"><div><img src="logo.jpg" class="logo"><div class="big" id="sDay"></div><div id="sDates"></div></div><div id="sPrayers" class="s-prayers"></div><div><div id="sType" class="badge"></div><div id="sTip" class="s-tip"></div></div><small>إنشاءات الزياد للمقاولات</small></div>
-</section>
+<section class="hero"><img src="logo.jpg" class="logo" onerror="this.style.display='none'"><div class="brand">تقويم إنشاءات الزياد</div><div class="sub">الرياض • بطاقة اليوم</div><div id="weekday" class="day">—</div><div class="dates"><div class="datebox"><b>التاريخ الهجري • أم القرى</b><span id="hijri">—</span></div><div class="datebox"><b>التاريخ الميلادي</b><span id="greg">—</span></div></div></section>
+<section class="photoCard"><img id="dayPhoto" alt="صورة من منطقة الرياض"><div class="photoShade"></div><div class="photoContent"><span id="photoTag" class="photoTag"></span><div id="photoTitle" class="photoTitle"></div><div id="photoSub" class="photoSub"></div><div class="photoNav"><button onclick="nextPhoto()">الصورة التالية</button></div></div></section>
+<section class="card"><h2>أوقات الصلاة • الرياض</h2><div id="prayers" class="prayers"><div class="prayer"><b>الفجر</b><span>—</span></div><div class="prayer"><b>الشروق</b><span>—</span></div><div class="prayer"><b>الظهر</b><span>—</span></div><div class="prayer"><b>العصر</b><span>—</span></div><div class="prayer"><b>المغرب</b><span>—</span></div><div class="prayer"><b>العشاء</b><span>—</span></div></div><div class="notice">لا نعرض مواقيت غير موثقة. عند عدم توفر مصدر رسمي معتمد تبقى المواقيت فارغة بدل التخمين.</div></section>
+<section class="card tip"><span id="tipType" class="badge">معلومة فنية</span><h2>فائدة اليوم</h2><div id="tipText" class="tiptext"></div><div class="actions"><button class="secondary" onclick="nextTip()">تغيير الفائدة</button><button class="secondary" onclick="changeTheme()">تغيير المظهر</button></div></section>
+<section class="card"><h2>المناسبات والمواعيد القريبة</h2><div id="events"></div><div class="source">لا تظهر المناسبات الدينية الحساسة على أنها مؤكدة قبل صدور إعلان رسمي. مواعيد الرواتب المدرجة لعام 2026 مأخوذة من وزارة المالية، مع التنبيه الرسمي بأنها قابلة للتغيير.</div></section>
+<section class="card"><h2>بطاقة السناب</h2><div class="actions"><button class="primary" onclick="previewSnap()">معاينة بطاقة السناب</button><button class="secondary" onclick="shareSnap()">مشاركة البطاقة</button></div><div id="snapWrap" class="snapWrap"><canvas id="snapCanvas" class="snapCanvas" width="1080" height="1920"></canvas><div id="snapStatus" class="snapStatus">جاهزة للحفظ أو المشاركة كصورة.</div></div></section>
 </main>
 <script>
 const photos=[
@@ -79,64 +43,20 @@ const photos=[
 ];
 let pi=new Date().getDate()%photos.length;
 function renderPhoto(){const p=photos[pi];dayPhoto.src=p.url;photoTag.textContent=p.tag;photoTitle.textContent=p.title;photoSub.textContent=p.sub}
-function nextPhoto(){pi=(pi+1)%photos.length;renderPhoto()}
-renderPhoto();
-
-const tips=[
-["معلومة فنية","قبل تنفيذ العزل في دورات المياه، تُعالج الزوايا ومخارج المواسير بعناية لأنها من أكثر نقاط احتمالية التسرب."],
-["نصيحة تنفيذية","لا تبدأ أعمال الدهان النهائي قبل التأكد من جفاف اللياسة ومعالجة مصادر الرطوبة؛ جودة الطبقة الأخيرة تبدأ من السطح تحتها."],
-["من خبرتنا","ترتيب مراحل التشطيب يوفر الوقت والتكلفة: الأعمال المخفية أولًا، ثم الأسطح، ثم التركيبات النهائية والحماية."],
-["معلومة فنية","عند استلام البلاط، افحص اختلاف درجات اللون والمقاسات قبل التركيب ووزّع الكراتين من أكثر من دفعة عند الحاجة."],
-["نصيحة تنفيذية","في الإضاءة المعمارية، جرّب عينة فعلية في الموقع ليلًا قبل اعتماد الكمية؛ لون الجدار وارتفاع السقف يغيران النتيجة."],
-["من خبرتنا","التوثيق بالصور قبل إغلاق الجبس أو البلاط يساعد لاحقًا في معرفة مسارات الكهرباء والسباكة ويقلل أعمال التكسير."],
-["معلومة فنية","الميول حول صفايات الأرضيات تُختبر بالماء قبل إنهاء التسليم، وليس بالنظر فقط."],
-["نصيحة تنفيذية","قبل تركيب الحجر الخارجي، اعتمد عينة مكتملة تشمل اللون والفرز والفواصل وطريقة التثبيت؛ العينة مرجع التنفيذ."],
-["من خبرتنا","المعاينة المبكرة لمواقع مخارج التكييف والإنارة تمنع كثيرًا من التعارضات بعد إغلاق الأسقف."]
-];
+function nextPhoto(){pi=(pi+1)%photos.length;renderPhoto()} renderPhoto();
+const tips=[["معلومة فنية","قبل تنفيذ العزل في دورات المياه، تُعالج الزوايا ومخارج المواسير بعناية لأنها من أكثر نقاط احتمالية التسرب."],["نصيحة تنفيذية","لا تبدأ أعمال الدهان النهائي قبل التأكد من جفاف اللياسة ومعالجة مصادر الرطوبة؛ جودة الطبقة الأخيرة تبدأ من السطح تحتها."],["من خبرتنا","ترتيب مراحل التشطيب يوفر الوقت والتكلفة: الأعمال المخفية أولًا، ثم الأسطح، ثم التركيبات النهائية والحماية."],["معلومة فنية","عند استلام البلاط، افحص اختلاف درجات اللون والمقاسات قبل التركيب ووزّع الكراتين من أكثر من دفعة عند الحاجة."],["نصيحة تنفيذية","في الإضاءة المعمارية، جرّب عينة فعلية في الموقع ليلًا قبل اعتماد الكمية؛ لون الجدار وارتفاع السقف يغيران النتيجة."],["من خبرتنا","التوثيق بالصور قبل إغلاق الجبس أو البلاط يساعد لاحقًا في معرفة مسارات الكهرباء والسباكة ويقلل أعمال التكسير."]];
 let ti=new Date().getDate()%tips.length, theme=0;
-function fmtHijri(d){
- try{return new Intl.DateTimeFormat('ar-SA-u-ca-islamic-umalqura',{day:'numeric',month:'long',year:'numeric'}).format(d)}
- catch(e){return "تعذر التحقق"}
-}
+function fmtHijri(d){try{return new Intl.DateTimeFormat('ar-SA-u-ca-islamic-umalqura',{day:'numeric',month:'long',year:'numeric'}).format(d)}catch(e){return "تعذر التحقق"}}
 function fmtGreg(d){return new Intl.DateTimeFormat('ar-SA-u-ca-gregory',{day:'numeric',month:'long',year:'numeric'}).format(d)}
 function fmtWeek(d){return new Intl.DateTimeFormat('ar-SA',{weekday:'long'}).format(d)}
-const today=new Date();
-weekday.textContent=fmtWeek(today); hijri.textContent=fmtHijri(today); greg.textContent=fmtGreg(today);
-function renderTip(){tipType.textContent=tips[ti][0];tipText.textContent=tips[ti][1]}
-function nextTip(){ti=(ti+1)%tips.length;renderTip()}
-function changeTheme(){theme=(theme+1)%3;document.body.className=theme===1?'theme2':theme===2?'theme3':''}
-renderTip();
-
-// Officially sourced 2026 payroll dates (Saudi Ministry of Finance).
-const payroll=[
-["2026-09-27","موعد صرف راتب سبتمبر 2026"],["2026-10-27","موعد صرف راتب أكتوبر 2026"],
-["2026-11-26","موعد صرف راتب نوفمبر 2026"],["2026-12-27","موعد صرف راتب ديسمبر 2026"]
-];
-function renderEvents(){
- let out=[], now=new Date(today.getFullYear(),today.getMonth(),today.getDate());
- payroll.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000); if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});
- // Fixed national dates; lunar-sensitive religious occasions intentionally omitted until officially confirmed.
- const fixed=[["2026-09-23","اليوم الوطني السعودي"]];
- fixed.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000);if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});
- if(out.length){
-   const first=out[0];
-   events.innerHTML=out.map((x,i)=>i===0?x.replace('class="event"','class="eventHero"'):x).join("");
- }else events.innerHTML=`<div class="event">لا توجد مناسبة موثقة قريبة معروضة حاليًا.</div>`;
-}
-renderEvents();
-
-function makeSnap(){
- snap.classList.add("show");sDay.textContent=weekday.textContent;sDates.textContent=hijri.textContent+" • "+greg.textContent+" م";
- sType.textContent=tipType.textContent;sTip.textContent=tipText.textContent;
- const vals=[...document.querySelectorAll("#prayers .prayer")].map(x=>x.innerText.replace("\n"," "));
- sPrayers.textContent=vals.some(x=>!x.includes("—"))?vals.join(" • "):"أوقات الصلاة لا تُعرض حتى التحقق من المصدر الرسمي.";
- snap.scrollIntoView({behavior:"smooth"});
-}
-async function shareSnap(){
- makeSnap();
- const text=`${weekday.textContent}\n${hijri.textContent}\n${greg.textContent} م\n\n${tipType.textContent}: ${tipText.textContent}\n\nإنشاءات الزياد للمقاولات`;
- if(navigator.share){try{await navigator.share({title:"بطاقة اليوم | إنشاءات الزياد",text});}catch(e){}}
- else{navigator.clipboard?.writeText(text);alert("تم نسخ محتوى البطاقة للمشاركة.");}
-}
+const today=new Date();weekday.textContent=fmtWeek(today);hijri.textContent=fmtHijri(today);greg.textContent=fmtGreg(today);
+function renderTip(){tipType.textContent=tips[ti][0];tipText.textContent=tips[ti][1]}function nextTip(){ti=(ti+1)%tips.length;renderTip()}function changeTheme(){theme=(theme+1)%3;document.body.className=theme===1?'theme2':theme===2?'theme3':''}renderTip();
+const payroll=[["2026-09-27","موعد صرف راتب سبتمبر 2026"],["2026-10-27","موعد صرف راتب أكتوبر 2026"],["2026-11-26","موعد صرف راتب نوفمبر 2026"],["2026-12-27","موعد صرف راتب ديسمبر 2026"]];
+function renderEvents(){let out=[],now=new Date(today.getFullYear(),today.getMonth(),today.getDate());payroll.forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000);if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});[["2026-09-23","اليوم الوطني السعودي"]].forEach(([ds,n])=>{let d=new Date(ds+"T12:00:00"),diff=Math.round((d-now)/86400000);if(diff>=0&&diff<=30)out.push(`<div class="event"><b>${n}</b><br><small>${fmtGreg(d)} • بعد ${diff} يوم</small></div>`)});events.innerHTML=out.length?out.map((x,i)=>i===0?x.replace('class="event"','class="eventHero"'):x).join(""):`<div class="event">لا توجد مناسبة موثقة قريبة معروضة حاليًا.</div>`}renderEvents();
+function roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill()}
+function wrapText(ctx,text,x,y,maxWidth,lineHeight,maxLines=10){const words=text.split(' ');let line='',lines=[];for(const word of words){const test=line?line+' '+word:word;if(ctx.measureText(test).width>maxWidth&&line){lines.push(line);line=word}else line=test}if(line)lines.push(line);lines=lines.slice(0,maxLines);lines.forEach((ln,i)=>ctx.fillText(ln,x,y+i*lineHeight));return y+lines.length*lineHeight}
+async function drawSnap(){const c=snapCanvas,ctx=c.getContext('2d');ctx.clearRect(0,0,c.width,c.height);const grad=ctx.createLinearGradient(0,0,0,c.height);grad.addColorStop(0,'#fffdf9');grad.addColorStop(1,'#efe6d8');ctx.fillStyle=grad;ctx.fillRect(0,0,c.width,c.height);ctx.textAlign='center';ctx.direction='rtl';ctx.fillStyle='#5b3b28';ctx.font='bold 70px Tahoma';ctx.fillText(weekday.textContent,540,270);ctx.font='40px Tahoma';ctx.fillStyle='#2d251f';ctx.fillText(hijri.textContent,540,355);ctx.fillText(greg.textContent+' م',540,415);ctx.fillStyle='#a58b43';roundRect(ctx,170,520,740,86,43);ctx.fillStyle='#fff';ctx.font='bold 38px Tahoma';ctx.fillText(tipType.textContent,540,575);ctx.fillStyle='#5b3b28';roundRect(ctx,105,670,870,620,54);ctx.fillStyle='#fff';ctx.font='bold 43px Tahoma';wrapText(ctx,tipText.textContent,540,790,760,74,7);ctx.fillStyle='#5b3b28';ctx.font='bold 38px Tahoma';ctx.fillText('إنشاءات الزياد للمقاولات',540,1690);ctx.font='28px Tahoma';ctx.fillStyle='#7b685b';ctx.fillText('تقويم اليوم • الرياض',540,1750);try{const logo=new Image();logo.src='logo.jpg';await logo.decode();const r=logo.width/logo.height,w=240,h=w/r;ctx.drawImage(logo,(1080-w)/2,70,w,h)}catch(e){}return c}
+async function previewSnap(){snapWrap.classList.add('show');await drawSnap();snapWrap.scrollIntoView({behavior:'smooth',block:'start'});snapStatus.textContent='تم إنشاء البطاقة كصورة فعلية 1080×1920.'}
+async function shareSnap(){await previewSnap();snapStatus.textContent='جاري تجهيز الصورة للمشاركة…';snapCanvas.toBlob(async blob=>{if(!blob){snapStatus.textContent='تعذر إنشاء الصورة.';return}const file=new File([blob],`بطاقة-اليوم-${new Date().toISOString().slice(0,10)}.png`,{type:'image/png'});try{if(navigator.canShare&&navigator.canShare({files:[file]})&&navigator.share){await navigator.share({files:[file],title:'بطاقة اليوم | إنشاءات الزياد'});snapStatus.textContent='تم فتح خيارات المشاركة بالصورة.'}else{const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=file.name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);snapStatus.textContent='تم تجهيز البطاقة كصورة للحفظ والمشاركة.'}}catch(e){if(e.name!=='AbortError')snapStatus.textContent='تعذر فتح المشاركة؛ استخدم معاينة البطاقة لحفظ الصورة.'}},'image/png',0.95)}
 if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script></body></html>

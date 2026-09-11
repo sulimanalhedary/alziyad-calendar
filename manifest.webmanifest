@@ -1,26 +1,14 @@
 {
-  "name": "تقويم إنشاءات الزياد",
-  "short_name": "تقويم الزياد",
-  "description": "تقويم يومي بهوية إنشاءات الزياد للتاريخ والمحتوى اليومي والمناسبات.",
-  "lang": "ar",
-  "dir": "rtl",
-  "start_url": "./",
-  "scope": "./",
-  "display": "standalone",
-  "background_color": "#f7f3ea",
-  "theme_color": "#8a6b2d",
-  "icons": [
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
+  "name":"تقويم إنشاءات الزياد",
+  "short_name":"تقويم الزياد",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#efe8de",
+  "theme_color":"#5b3b28",
+  "dir":"rtl",
+  "lang":"ar",
+  "icons":[
+    {"src":"icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"icon-512.png","sizes":"512x512","type":"image/png"}
   ]
 }

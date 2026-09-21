@@ -78,4 +78,4 @@ function showPhotoSource(photo){
  box.append(document.createTextNode(' — '+photo.author+' • '+photo.license+' • قصّ للصورة وإضافة نص'));
  if(photo.licenseUrl){const license=document.createElement('a');license.href=photo.licenseUrl;license.target='_blank';license.rel='noopener';license.textContent=' • شروط الاستخدام';box.append(license)}
 }
-let daySeen=riyadhDay();setInterval(()=>{if(riyadhDay()!==daySeen){daySeen=riyadhDay();today=new Date();restoreChoice();render();renderEvents()}},60000);
+let daySeen=riyadhDay();setInterval(()=>{if(riyadhDay()!==daySeen){daySeen=riyadhDay();today=new Date();tipIndex=0;restoreChoice();render();renderEvents()}},60000);

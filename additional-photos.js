@@ -1812,4 +1812,492 @@ const ADDITIONAL_PHOTOS=[
     "fit": "contain"
   }
 ];
+ADDITIONAL_PHOTOS.push(...[
+  {
+    "id": "riyadh-20261114-1000100007-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000100007.jpg",
+    "title": "1000100007",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101167-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101167.png",
+    "title": "1000101167",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101168-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101168.png",
+    "title": "1000101168",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101181-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101181.png",
+    "title": "1000101181",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101193-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101193.png",
+    "title": "1000101193",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101194-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101194.png",
+    "title": "1000101194",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101195-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101195.png",
+    "title": "1000101195",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101196-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101196.png",
+    "title": "1000101196",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101212-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101212.png",
+    "title": "1000101212",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101224-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101224.png",
+    "title": "1000101224",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101225-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101225.png",
+    "title": "1000101225",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101237-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101237.png",
+    "title": "1000101237",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101260-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101260.png",
+    "title": "1000101260",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101272-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101272.png",
+    "title": "1000101272",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101273-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101273.png",
+    "title": "1000101273",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101285-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101285.png",
+    "title": "1000101285",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101298-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101298.png",
+    "title": "1000101298",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101310-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101310.png",
+    "title": "1000101310",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101311-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101311.png",
+    "title": "1000101311",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101312-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101312.png",
+    "title": "1000101312",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101313-png",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101313.png",
+    "title": "1000101313",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101314-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101314.jpg",
+    "title": "1000101314",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101315-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101315.jpg",
+    "title": "1000101315",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101316-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101316.jpg",
+    "title": "1000101316",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101317-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101317.jpg",
+    "title": "1000101317",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101318-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101318.jpg",
+    "title": "1000101318",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101319-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101319.jpg",
+    "title": "1000101319",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101320-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101320.jpg",
+    "title": "1000101320",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101321-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101321.jpg",
+    "title": "1000101321",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101322-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101322.jpg",
+    "title": "1000101322",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101323-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101323.jpg",
+    "title": "1000101323",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101324-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101324.jpg",
+    "title": "1000101324",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101325-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101325.jpg",
+    "title": "1000101325",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101326-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101326.jpg",
+    "title": "1000101326",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101327-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101327.jpg",
+    "title": "1000101327",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101328-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101328.jpg",
+    "title": "1000101328",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101329-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101329.jpg",
+    "title": "1000101329",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101330-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101330.jpg",
+    "title": "1000101330",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101331-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101331.jpg",
+    "title": "1000101331",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101332-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101332.jpg",
+    "title": "1000101332",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101333-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101333.jpg",
+    "title": "1000101333",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101334-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101334.jpg",
+    "title": "1000101334",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101335-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101335.jpg",
+    "title": "1000101335",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101336-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101336.jpg",
+    "title": "1000101336",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101337-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101337.jpg",
+    "title": "1000101337",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101338-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101338.jpg",
+    "title": "1000101338",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101339-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101339.jpg",
+    "title": "1000101339",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101340-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101340.jpg",
+    "title": "1000101340",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101341-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101341.jpg",
+    "title": "1000101341",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101342-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101342.jpg",
+    "title": "1000101342",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101343-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101343.jpg",
+    "title": "1000101343",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101344-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101344.jpg",
+    "title": "1000101344",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101345-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101345.jpg",
+    "title": "1000101345",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  },
+  {
+    "id": "riyadh-20261114-1000101346-jpg",
+    "loc": "الرياض",
+    "url": "assets/photos/الرياض/1000101346.jpg",
+    "title": "1000101346",
+    "credit": "الرياض",
+    "pos": "center",
+    "fit": "contain"
+  }
+]);
 PHOTOS.push(...ADDITIONAL_PHOTOS);

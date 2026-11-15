@@ -1,14 +1,5 @@
 const ADDITIONAL_PHOTOS=[
   {
-    "id": "approved-59008bf26559589fa529aad7b43620f07c1b968efa3658a24beab066fe4c0db2",
-    "loc": "الرياض",
-    "url": "assets/photos/الرياض/1000085716.jpg",
-    "title": "1000085716",
-    "credit": "الرياض",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
     "id": "approved-bd4025869b1be0ff5e103e275ec22c75af1e1ef3487b4569058ba3d7abf89d2a",
     "loc": "الرياض",
     "url": "assets/photos/الرياض/1000085696.jpg",
@@ -126,15 +117,6 @@ const ADDITIONAL_PHOTOS=[
     "fit": "contain"
   },
   {
-    "id": "approved-ee8e00e16b8c2003baea716466709d14932155fadd3752acac0d48b7c4f6827e",
-    "loc": "الرياض",
-    "url": "assets/photos/الرياض/1000085685.jpg",
-    "title": "1000085685",
-    "credit": "الرياض",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
     "id": "approved-db52c16a054d37208f62e7b26083eb3be0a2968b87410c100e3e6bcb4a5408b5",
     "loc": "الرياض",
     "url": "assets/photos/الرياض/1000085691.jpg",
@@ -148,15 +130,6 @@ const ADDITIONAL_PHOTOS=[
     "loc": "الرياض",
     "url": "assets/photos/الرياض/1000085708.jpg",
     "title": "1000085708",
-    "credit": "الرياض",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-2d00d076aeae0ed81a101e2d7d6255351266433c928cf212a1e356393952fcf0",
-    "loc": "الرياض",
-    "url": "assets/photos/الرياض/1000085704.jpg",
-    "title": "1000085704",
     "credit": "الرياض",
     "pos": "center",
     "fit": "contain"
@@ -216,15 +189,6 @@ const ADDITIONAL_PHOTOS=[
     "fit": "contain"
   },
   {
-    "id": "approved-d6da2a8d635e6794e242508e340a6815af754d59c54d3dc0610c3459efeca843",
-    "loc": "الرياض",
-    "url": "assets/photos/الرياض/1000085714.jpg",
-    "title": "1000085714",
-    "credit": "الرياض",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
     "id": "approved-bbf0ca9cc60d2c12b7f258f1642cfe4bb1140cec83d8d7fcdf39b616d36a78e5",
     "loc": "الرياض",
     "url": "assets/photos/الرياض/1000085709.jpg",
@@ -279,15 +243,6 @@ const ADDITIONAL_PHOTOS=[
     "fit": "contain"
   },
   {
-    "id": "approved-c31dc313798d68f31811a27aa4ad698d12a621d0bfb55b3a00468206e02d21ce",
-    "loc": "الرياض",
-    "url": "assets/photos/الرياض/1000085701.jpg",
-    "title": "1000085701",
-    "credit": "الرياض",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
     "id": "approved-62289f8e9ae037f848e062e0fc31f4ddcdee036d9614fafb3df3c13c4473f868",
     "loc": "الرياض",
     "url": "assets/photos/الرياض/1000085689.png",
@@ -328,15 +283,6 @@ const ADDITIONAL_PHOTOS=[
     "loc": "الرياض",
     "url": "assets/photos/الرياض/1000085711.jpg",
     "title": "1000085711",
-    "credit": "الرياض",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-652eca371c982c5f18d4abda70fd1dd06142c5c3e9474f89d6166c8d2b1695c3",
-    "loc": "الرياض",
-    "url": "assets/photos/الرياض/1000085686.jpg",
-    "title": "1000085686",
     "credit": "الرياض",
     "pos": "center",
     "fit": "contain"
@@ -1703,21 +1649,6 @@ const ADDITIONAL_PHOTOS=[
     "url": "1000085400.jpg",
     "title": "1000085400",
     "credit": "الدرعية",
-    "pos": "center",
-    "fit": "contain",
-    "crop": [
-      8,
-      295,
-      693,
-      946
-    ]
-  },
-  {
-    "id": "approved-0ebf54838a83613b94d7bdb4a584d5beb36d20de1d6bad1f8f3ce85d36c2ff73",
-    "loc": "الرياض",
-    "url": "1000085468.jpg",
-    "title": "1000085468",
-    "credit": "الرياض",
     "pos": "center",
     "fit": "contain",
     "crop": [

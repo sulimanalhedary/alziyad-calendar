@@ -323,573 +323,69 @@ const ADDITIONAL_PHOTOS=[
     "pos": "center",
     "fit": "contain"
   },
-  {
-    "id": "approved-6dc05ec7a77348c83d1577f1cf84b5ec97d1357ace5bd125590da7512785b64f",
-    "loc": "من أعمالنا",
-    "url": "1000003288.jpg",
-    "title": "1000003288",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-ac3b39b93cc860ae3b1c2c1a5f09473ea5b7a72165ac54bacd28f6beaffa2c19",
-    "loc": "من أعمالنا",
-    "url": "1000007365.jpg",
-    "title": "1000007365",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-379e35fc14c991ce815ff3ead40aa79b5a37f8c461ae8680067c0c701c010bf1",
-    "loc": "من أعمالنا",
-    "url": "1000006472.jpg",
-    "title": "1000006472",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-8cdd3de48679f426f691ea6123ac5528c63a69210cc30582b2fc7a1c94e34979",
-    "loc": "من أعمالنا",
-    "url": "1000004442.jpg",
-    "title": "1000004442",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-6a6c39dcf94eb718546bb3094ba63550de72b21ac3662783a06554c114ffe8be",
-    "loc": "من أعمالنا",
-    "url": "1000000887.jpg",
-    "title": "1000000887",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-eb2b82185b3cc0714d88a3984ddf4d05a12084841a6bafa7d20c5e625b22a7a9",
-    "loc": "من أعمالنا",
-    "url": "1000068455.jpg",
-    "title": "1000068455",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-138647fefe2a0a4739c1d5ebe85ca2ff7e6568bacfaa089a729695d9a64293f1",
-    "loc": "من أعمالنا",
-    "url": "1000009807.jpg",
-    "title": "1000009807",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-7bb184d3dafac6e4c605b5ed2d01536b3001efb3a6a078d5a7562647c8521499",
-    "loc": "من أعمالنا",
-    "url": "1000003663.jpg",
-    "title": "1000003663",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-70ae65d2a50ac4d5883085ff21406af9daddb94fee1c57e664cf8a7ed2119e56",
-    "loc": "من أعمالنا",
-    "url": "1000002796.jpg",
-    "title": "1000002796",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-a7e16235cd0b24b2f0750de9be748b0e0c5f53fd50a404eb608b04ea0a78dd4a",
-    "loc": "من أعمالنا",
-    "url": "1000065265.jpg",
-    "title": "1000065265",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-ea2a1c5de2e5c7fe03abe05768fb3fca65b732b31c9f6091ad703ab3cdbe916b",
-    "loc": "من أعمالنا",
-    "url": "1000006399.jpg",
-    "title": "1000006399",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-b85b52f4e983c046e8b98e22ae44f987b89bdfe1c529ed6d4d25a4e7651e6451",
-    "loc": "من أعمالنا",
-    "url": "1000009876.jpg",
-    "title": "1000009876",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-53bd6738d0535fe177cedae7c37f3f7523de94166ab5e5c1a1a8e06dbae6bd72",
-    "loc": "من أعمالنا",
-    "url": "1000000528.jpg",
-    "title": "1000000528",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-d9c58dd7f930e6fc19c621bb1e342ce857ebff88e97426d68ac9fe14b1fbf220",
-    "loc": "من أعمالنا",
-    "url": "1000065268.jpg",
-    "title": "1000065268",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-6e72e857b59803a6ad0987e019b8900dafcfb0415a75d1fce76c8ae6915183c8",
-    "loc": "من أعمالنا",
-    "url": "1000007085.jpg",
-    "title": "1000007085",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-ef9b0fa3bf5b826a2126b941d96cb6744b9d3e8c482004b28104e432fe436d6e",
-    "loc": "من أعمالنا",
-    "url": "1000081133.jpg",
-    "title": "1000081133",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-9b9b76275109eb3e54d8554bb9051726d84ee4d75a9b0ea9a47f7c717f6c671a",
-    "loc": "من أعمالنا",
-    "url": "1000086085.jpg",
-    "title": "1000086085",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-d52a143bf92142a324d9e78780dfff208bc00860f5c10f15c83adb54eb3c00dd",
-    "loc": "من أعمالنا",
-    "url": "1000063541.jpg",
-    "title": "1000063541",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-04588c8ae7b9227445471203a4bc9419baeba0f002a38c2f09703ef06de6d986",
-    "loc": "من أعمالنا",
-    "url": "1000026162.jpg",
-    "title": "1000026162",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-40194e79af5ffd06ca38e08690f1998bb29d33565b3bfccb7d37aff20a9b29b8",
-    "loc": "من أعمالنا",
-    "url": "1000063530.jpg",
-    "title": "1000063530",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-928136a066eeec98f1e831c3cdd6c59fe3293273347c8927b69762e9109b71e8",
-    "loc": "من أعمالنا",
-    "url": "1000008077.jpg",
-    "title": "1000008077",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-9eb28d7f392c091bac527af7640210fae76b924008652a165e0ed243527a936b",
-    "loc": "من أعمالنا",
-    "url": "1000086086.jpg",
-    "title": "1000086086",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-ad1fe3d4354c692970885bb1b3e851b93e610ad4e12ad5d74fe62134d76e0dfb",
-    "loc": "من أعمالنا",
-    "url": "1000000504.jpg",
-    "title": "1000000504",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-2eea9b9eb36867bbc27612f3b3b10396a3e3bbe8ae36e499d7a18afdf5288b13",
-    "loc": "من أعمالنا",
-    "url": "1000004142.jpg",
-    "title": "1000004142",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-934a94cb3109eec331cf3b934a9f63a2949932abd7607658e43d655b88ebbd89",
-    "loc": "من أعمالنا",
-    "url": "1000002196.jpg",
-    "title": "1000002196",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-95665278cb2dd22b99b80f54c2c76d1212b42fbd8dd20343d48b7d14a0b79ad9",
-    "loc": "من أعمالنا",
-    "url": "1000086089.jpg",
-    "title": "1000086089",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-e9570b17e9694696ccf14db21da86b11ba5bc2ed4f92265eeb09f9367f2955b1",
-    "loc": "من أعمالنا",
-    "url": "1000006350.jpg",
-    "title": "1000006350",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-6e702a42f100dc0e4f87f2f7ff39bfe9454076a10749c5d2183abc5c0a6165cc",
-    "loc": "من أعمالنا",
-    "url": "1000009843.jpg",
-    "title": "1000009843",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-af4980de892e236e6dad524f3cf2d1eba5170cef7156544f8be5c863cf9642b8",
-    "loc": "من أعمالنا",
-    "url": "1000011106.jpg",
-    "title": "1000011106",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-aedc51e213a5dfbaa2adbb40e6f46c5985617be8f34d461f685b19e81bc9bafe",
-    "loc": "من أعمالنا",
-    "url": "1000009815.jpg",
-    "title": "1000009815",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-05abbfa5f1ceb0d734e584ab891d4ab4506ddbdc28c3b7804b13ec07c7cfe1c3",
-    "loc": "من أعمالنا",
-    "url": "1000025872.jpg",
-    "title": "1000025872",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-f2c6ba142727e189a37dd3079f8fb15edbdfed94c0b50988524e62f2c0b00f6c",
-    "loc": "من أعمالنا",
-    "url": "1000007797.jpg",
-    "title": "1000007797",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-1865f3b73a4677b2b8479a8a86c6e05a05c82f106b2e73072e6d268b3f695b90",
-    "loc": "من أعمالنا",
-    "url": "1000065292.jpg",
-    "title": "1000065292",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-ef3b5afb7470c8a223f50bd59c81ce3733bf2811fad135b8fd991a394a3ed1da",
-    "loc": "من أعمالنا",
-    "url": "1000005456.jpg",
-    "title": "1000005456",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-25f4c03612569b67a6a197a9db69b1240df81f5743e82d0e53583480b3499f19",
-    "loc": "من أعمالنا",
-    "url": "1000064647.jpg",
-    "title": "1000064647",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-fb131f8317136234e00a7112204c13247784a904113f9d9778622a922b41ebd6",
-    "loc": "من أعمالنا",
-    "url": "1000007475.jpg",
-    "title": "1000007475",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-330f4b719f51dfe7a52b0876315758b59cc9f426b563bb9ecdd8731f19ff2315",
-    "loc": "من أعمالنا",
-    "url": "1000009841.jpg",
-    "title": "1000009841",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-49adfd54b9b475899a54bd4068ba1b44562509efb3148fdca54c4f8490b24594",
-    "loc": "من أعمالنا",
-    "url": "1000000469.jpg",
-    "title": "1000000469",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-f76aea58a429a11e94df22cc042d2ce61bcc216366554e21f1fd38ab0a528a9e",
-    "loc": "من أعمالنا",
-    "url": "1000008135.jpg",
-    "title": "1000008135",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-02a1d87596224151e4da440afaa3e1c3627bb502d9a8a4d70609c6572deaff16",
-    "loc": "من أعمالنا",
-    "url": "1000009828.jpg",
-    "title": "1000009828",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-ad338d54e882fe43ba1b67cac2906eb09909dcb11c1d72ec7235959643d2df0d",
-    "loc": "من أعمالنا",
-    "url": "1000000855.jpg",
-    "title": "1000000855",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-3c2b5f4e9f908e1b7ff3d44e2116cce7dd885ee270e3d985e90f2ca7150f3918",
-    "loc": "من أعمالنا",
-    "url": "1000086087.jpg",
-    "title": "1000086087",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-96f9f545b0db8415a4171ea0a99f7de65516fe1bc907f6ab62be26650d53ee61",
-    "loc": "من أعمالنا",
-    "url": "1000065260.jpg",
-    "title": "1000065260",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-4cfb42a142fcf2af21eff2c8219015301281c44f703f5cd40e2d3493597f5daa",
-    "loc": "من أعمالنا",
-    "url": "1000086088.jpg",
-    "title": "1000086088",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-d3579450abca00bd235b02b02334da701f2d8e46bb7d1ac8a774bb0e042e67c2",
-    "loc": "من أعمالنا",
-    "url": "1000020785.jpg",
-    "title": "1000020785",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-9b2a68625920068f2ab32c169a0c06a398756efbf2afb136fa76b12e1c57c700",
-    "loc": "من أعمالنا",
-    "url": "1000086081.jpg",
-    "title": "1000086081",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-5c8afcdbdd7219d27ef86cdd771a1eb33b96daa12450fe7e55139e31567406fd",
-    "loc": "من أعمالنا",
-    "url": "1000005419.jpg",
-    "title": "1000005419",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-c8ed56f4841e77267535dbfc2eb778f8c02e70a1768d5554344472de560964f0",
-    "loc": "من أعمالنا",
-    "url": "1000068459.jpg",
-    "title": "1000068459",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-176220dcc4dfb1cf13e3324378eccde06c28b1e1b194210ac86cd92e659918fc",
-    "loc": "من أعمالنا",
-    "url": "1000064550.jpg",
-    "title": "1000064550",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-062b7139d163df5d2ebc8f2a8b0be64f00449b92ea235afe3a13829f72fcb94f",
-    "loc": "من أعمالنا",
-    "url": "1000003088.jpg",
-    "title": "1000003088",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-237286164c693f610effb20bcc6400ba4c2d07d78884e7f7669349e70e13f10a",
-    "loc": "من أعمالنا",
-    "url": "1000003488.jpg",
-    "title": "1000003488",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-79466b4c175f37a30fb1ca3e66ce37cbfbcff1b55b87edeb4e2f244eb7f2d126",
-    "loc": "من أعمالنا",
-    "url": "1000001615.jpg",
-    "title": "1000001615",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-9eafc086742ac2e5371c1e499ea69cf6943cd7d88de314ad940bb80a83cbe390",
-    "loc": "من أعمالنا",
-    "url": "1000007304.jpg",
-    "title": "1000007304",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-34d490b623e08e37e7c24082b1ac0c8eef765f27abd6ce690bb30c0dd7706590",
-    "loc": "من أعمالنا",
-    "url": "1000000928.jpg",
-    "title": "1000000928",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-c08e7fe558db96abd9a993f79897247c4814bc014f16e7668305835c3ca494e5",
-    "loc": "من أعمالنا",
-    "url": "1000086084.jpg",
-    "title": "1000086084",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-62677b932803334f17908eaf9dd344bfcb27be4333d4f23f3291c64b6c2f0b40",
-    "loc": "من أعمالنا",
-    "url": "1000004137.jpg",
-    "title": "1000004137",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-e2a3cc0bd26004760fb4eb894d8ac18ee94e212d7095202d08c211f65c923c02",
-    "loc": "من أعمالنا",
-    "url": "1000003058.jpg",
-    "title": "1000003058",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-e7802d3b678e1a11272c3d1edb04e11b6f9619068a1ea3e752f27d990f2a96ab",
-    "loc": "من أعمالنا",
-    "url": "1000009813.jpg",
-    "title": "1000009813",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-59e93a7065e7729e526a6d0f874319f4cde57898126b869db38c38de0314e315",
-    "loc": "من أعمالنا",
-    "url": "1000006432.jpg",
-    "title": "1000006432",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-81a3fcaf93b519ddbd52283b9199fd6d676c781d2b58363c69d9bca1c0da4211",
-    "loc": "من أعمالنا",
-    "url": "1000086083.jpg",
-    "title": "1000086083",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-6550e9821a655aecc958ef7f98a8c73627976675b76956e1009b805939ce0d98",
-    "loc": "من أعمالنا",
-    "url": "1000063528.jpg",
-    "title": "1000063528",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-0d012a9d387de4fd567fb429cf9e8aba32a2c16cba246f5779e7c499f9e73487",
-    "loc": "من أعمالنا",
-    "url": "1000068453.jpg",
-    "title": "1000068453",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-a78e3e699e8251bc818ecd1ce9161c7a31a8fb6701bec884018a1d78249f8dfb",
-    "loc": "من أعمالنا",
-    "url": "1000007770.jpg",
-    "title": "1000007770",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "id": "approved-930570508f2c9d239e525de36dac07d1e6be6e68e26be9c771d67dbe9d041ee1",
     "loc": "الرياض",
@@ -899,33 +395,9 @@ const ADDITIONAL_PHOTOS=[
     "pos": "center",
     "fit": "contain"
   },
-  {
-    "id": "approved-71b7b7e081c3a7cdcdbb059098af8de9593e27829aef0892dbd81754f7c46444",
-    "loc": "من أعمالنا",
-    "url": "1000086082.jpg",
-    "title": "1000086082",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-67c61b18f4b216766adbe9b009079324033a6a3d6a9b5f530e28fb9de1081f63",
-    "loc": "من أعمالنا",
-    "url": "1000027237.jpg",
-    "title": "1000027237",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-4f0c755a8dec799fc1b5501fd41f97cc25c2f1c4d57474ed8b02c487bd4d99b9",
-    "loc": "من أعمالنا",
-    "url": "26f7ab51-e7b3-4f78-b12b-f697ac7c160b-1_all_17766.jpg",
-    "title": "26f7ab51-e7b3-4f78-b12b-f697ac7c160b-1_all_17766",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
+  
+  
+  
   {
     "id": "approved-059cbaa20f518b0c4095664b4952c16363ae1cf9f063da0ae37b30c118a9e1b7",
     "loc": "الرياض",
@@ -935,204 +407,28 @@ const ADDITIONAL_PHOTOS=[
     "pos": "center",
     "fit": "contain"
   },
-  {
-    "id": "approved-b09469f3fe46260920698f7a4af3d33b322f91a63a1c34acf38cfbfe825a28d1",
-    "loc": "من أعمالنا",
-    "url": "1000005018.jpg",
-    "title": "1000005018",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-8e133884bd1dbe8e2433de4f5699f0e0bfa37bc60e9f01703f6d386d26005e33",
-    "loc": "من أعمالنا",
-    "url": "1000063542.jpg",
-    "title": "1000063542",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-3e1555b45c20ef1b8fe75da25e489b0b2085d3aa7958d29495a071d063bca049",
-    "loc": "من أعمالنا",
-    "url": "1000027242.jpg",
-    "title": "1000027242",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-7ee928c1cdf13ab414355a6ba3411899083b5095cae2e64ed94300a8ababfa32",
-    "loc": "من أعمالنا",
-    "url": "1000008233.jpg",
-    "title": "1000008233",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-009c0ec6ae534a31e8c704139b47d8ea5488cd7b2a91ae389b481f2e4bc3f00c",
-    "loc": "من أعمالنا",
-    "url": "1000005697.jpg",
-    "title": "1000005697",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-2a564f281fbd227ac31b574e967389ed4eadb43491bf2ef75cb94b93bff9c65b",
-    "loc": "من أعمالنا",
-    "url": "1000004711.jpg",
-    "title": "1000004711",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-4e809b25f36e9e8b18033bfe00c27f416ab9050173cdd0b05db75ac4c30c4094",
-    "loc": "من أعمالنا",
-    "url": "1000055478.jpg",
-    "title": "1000055478",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-9bd8b1e4fe1ed34acaf050c14f75d2c4dcbad935566b0a8d6e0bcec4dc073b4e",
-    "loc": "من أعمالنا",
-    "url": "1000002537.jpg",
-    "title": "1000002537",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-17500eaa4172f8dc817c03de5b13b6e262685cac7db66328824a3d1fa6e35819",
-    "loc": "من أعمالنا",
-    "url": "1000000959.jpg",
-    "title": "1000000959",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-1adcbff1e6e6e8426df5c0c8f2a042bda7097daf31fa52e3e7894a1553fbe3f5",
-    "loc": "من أعمالنا",
-    "url": "1000065283.jpg",
-    "title": "1000065283",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-303d850270d1aae26ba68f70953ccd35724411cc9aaf566548cac81bb5c83540",
-    "loc": "من أعمالنا",
-    "url": "1000004565.jpg",
-    "title": "1000004565",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-f29b8d9aadff7fcd4f5c9943a663448a991a6d734e4790803f389d869b027416",
-    "loc": "من أعمالنا",
-    "url": "1000007951.png",
-    "title": "1000007951",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-14e8e7f62b6b8c15391871abb1ba0db48e33432d4436e617d7e5647be11f096b",
-    "loc": "من أعمالنا",
-    "url": "1000055472.jpg",
-    "title": "1000055472",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-49b55f7fa8cba93c915331a1f877d2184ac4327ce25edea23bcdea896a957992",
-    "loc": "من أعمالنا",
-    "url": "1000026156.jpg",
-    "title": "1000026156",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-fbedcf0e36bffe49b29fbb98b2b190b73d9702353cb3b783789bcdec50153b6f",
-    "loc": "من أعمالنا",
-    "url": "1000086092.jpg",
-    "title": "1000086092",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-95492dadf12b1ac0507cba8bf31b038afad5d12565e4c29ff0c8fd2225856356",
-    "loc": "من أعمالنا",
-    "url": "1000017169.jpg",
-    "title": "1000017169",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-350fbb3343ab669b75c0b2b8baaef5dd74d9c228a7dce05f5ec51fc604929a9e",
-    "loc": "من أعمالنا",
-    "url": "1000007762.jpg",
-    "title": "1000007762",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-e3486a643c480db71fe67b5830eb62483bbbe459cca37e664c9dd1abc5f5dbd3",
-    "loc": "من أعمالنا",
-    "url": "1000007870.jpg",
-    "title": "1000007870",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-03f9b0bd8c81d1192917c8f316534f80c3276db4e44d6ffd9fbc4c053ff29153",
-    "loc": "من أعمالنا",
-    "url": "1000000978.jpg",
-    "title": "1000000978",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-61104d087724631f1d2145120576dde51f6919f62df9771e24b5fdb80731d79e",
-    "loc": "من أعمالنا",
-    "url": "1000004782.jpg",
-    "title": "1000004782",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-922a4afd12e6961ebb684eafa1e37925aaae9e4db3e688098055e461327cc909",
-    "loc": "من أعمالنا",
-    "url": "1000004494.jpg",
-    "title": "1000004494",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
-  {
-    "id": "approved-559ce15d96781b08e89a426e077ecb798005abc4d933bc58b6fc802f01fa2e0a",
-    "loc": "من أعمالنا",
-    "url": "1000066400.jpg",
-    "title": "1000066400",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
-  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "id": "approved-78e0b31bad17cfbff26cab0657b41524ee5b8ac50073cc742bd14faa511ce355",
     "loc": "ثادق",
@@ -1732,15 +1028,6 @@ const ADDITIONAL_PHOTOS=[
       693,
       946
     ]
-  },
-  {
-    "id": "approved-08417defba0cd62c4ff76db948f55843d5b808dfd902896f32e75d1f9e50fde5",
-    "loc": "من أعمالنا",
-    "url": "1000065314.jpg",
-    "title": "1000065314",
-    "credit": "من أعمالنا",
-    "pos": "center",
-    "fit": "contain"
   }
 ];
 ADDITIONAL_PHOTOS.push(...[

@@ -408,7 +408,7 @@ function messageFor(date,offset,group,photo=currentPhoto()){
  const preferred=national?[]:preferredMessages(group,photo);
  const day=calendarDay(date);
  const sequence=preferred.length?day%preferred.length:group==='friday'?Math.floor(day/7):national?0:day;
- const label=group==='works'?'من أعمالنا':group==='friday'?'رسالة الجمعة':national?'رسالة اليوم الوطني':'رسالة اليوم';
+ const label=group==='works'?'':group==='friday'?'رسالة الجمعة':national?'رسالة اليوم الوطني':'رسالة اليوم';
  const text=pool[((sequence+offset)%pool.length+pool.length)%pool.length];
  const guide=group==='works'&&GUIDE_TIPS.find(tip=>tip.text===text);
  return {label:guide?'دليل المقاولين • ص '+guide.page:label,text};

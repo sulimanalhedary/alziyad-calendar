@@ -378,11 +378,20 @@ const CITY_MESSAGES={
     "من الدرعية، حيث يلتقي يومنا بحكايات من سبقونا."
   ]
 };
+// Residential contractors' guide, first edition (March 2023), printed page numbers.
+const GUIDE_TIPS=[
+ {photos:[19,65,99,119],page:'٢٠٩',text:'عند تركيب النافذة، نراجع إحكام الفاصل بين الإطار والجدار للحد من تسرّب الهواء.'},
+ {photos:[12,13,65,119],page:'٢٠٦',text:'عند اختيار زجاج الواجهة، نراجع مساحة النوافذ ضمن دراسة العزل الحراري للمنزل.'},
+ {photos:[19,99,117,119,120],page:'٢٣٦',text:'عند مراجعة مساحة الزجاج للمنزل، نجمع مساحات النوافذ في جميع الواجهات.'},
+ {photos:[53,67],page:'٢١٠',text:'قبل إقفال السقف، نراجع مسارات الإنارة والتكييف حتى لا تضغط التمديدات طبقة العزل الحراري.'},
+ {photos:[51,102,109,115],page:'٢٣٥',text:'عند توريد عزل الجدار الخارجي، نقارن نوع المادة وسماكتها وكثافتها بما في مخططات كفاءة الطاقة.'}
+];
 function preferredMessages(group,photo){
  if(group==='general')return CITY_MESSAGES[photo.loc]||[];
  if(group!=='works')return [];
  const number=photo.url?.match(/\/works\/work-(\d+)\.jpg$/)?.[1];
- return WORK_THEMES[WORK_PHOTO_THEMES[Number(number)-1]]||[];
+ const themed=WORK_THEMES[WORK_PHOTO_THEMES[Number(number)-1]]||[];
+ return [...themed,...GUIDE_TIPS.filter(tip=>tip.photos.includes(Number(number))).map(tip=>tip.text)];
 }
 const ALL_WORK_MESSAGES=[...Object.values(WORK_THEMES).flat(),...WORK_MESSAGES];
 const ALL_GENERAL_MESSAGES=[...Object.values(CITY_MESSAGES).flat(),...GENERAL_MESSAGES];
@@ -400,7 +409,9 @@ function messageFor(date,offset,group,photo=currentPhoto()){
  const day=calendarDay(date);
  const sequence=preferred.length?day%preferred.length:group==='friday'?Math.floor(day/7):national?0:day;
  const label=group==='works'?'من أعمالنا':group==='friday'?'رسالة الجمعة':national?'رسالة اليوم الوطني':'رسالة اليوم';
- return {label,text:pool[((sequence+offset)%pool.length+pool.length)%pool.length]};
+ const text=pool[((sequence+offset)%pool.length+pool.length)%pool.length];
+ const guide=group==='works'&&GUIDE_TIPS.find(tip=>tip.text===text);
+ return {label:guide?'دليل المقاولين • ص '+guide.page:label,text};
 }
 const occasionCache=new Map();
 function upcomingOccasion(date){

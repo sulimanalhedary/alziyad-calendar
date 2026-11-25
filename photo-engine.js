@@ -69,7 +69,6 @@ loadImg=async function(src){
  if(!response){const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);try{response=await fetch(src,{signal:controller.signal,credentials:'omit'});if(!response.ok||!response.headers.get('content-type')?.startsWith('image/'))throw Error('photo unavailable');if(cache)try{await cache.put(src,response.clone())}catch{}}finally{clearTimeout(timer)}}
  const blob=await response.blob(),url=URL.createObjectURL(blob);try{return await originalLoadImage(url)}finally{URL.revokeObjectURL(url)}
 };
-const changeImage=nextImage;nextImage=function(){changeImage();rememberChoice()};
 const changeFilter=filterLoc;filterLoc=function(loc,button){if(loc!=='all'&&!PHOTOS.some(p=>p.loc===loc)){updateGalleryStatus('صور '+loc+' لم تُحمّل بعد. اضغط تحديث مجموعة الصور مع الاتصال بالإنترنت');return}changeFilter(loc,button);restoreChoice();render();rememberChoice()};
 function showPhotoSource(photo){
  const box=document.getElementById('photoSource');box.replaceChildren();

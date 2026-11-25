@@ -23,7 +23,7 @@ function riyadhDay(){return Math.floor((Date.now()+3*3600000)/86400000)}
 function rememberChoice(){const p=currentPhoto();saveValue(STATE_KEY,{day:riyadhDay(),filter,id:p.id||p.url})}
 function restoreChoice(){const saved=readSaved(STATE_KEY);const list=eligible();if(!list.length)return;const match=saved?.day===riyadhDay()&&saved.filter===filter?list.find(x=>(x.p.id||x.p.url)===saved.id):null;photoIndex=match?match.i:list[riyadhDay()%list.length].i}
 function updateGalleryStatus(message){
- const counts=['الرياض','ثادق','الدرعية','من أعمالنا'].map(loc=>loc+': '+PHOTOS.filter(p=>p.loc===loc).length);
+ const counts=['الرياض','ثادق','الدرعية','من أعمالنا','يوم الجمعة'].map(loc=>loc+': '+PHOTOS.filter(p=>p.loc===loc).length);
  document.getElementById('galleryStatus').textContent=message+' — '+counts.join(' • ');
 }
 function mergeMetadata(rows){

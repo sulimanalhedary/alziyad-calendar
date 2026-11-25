@@ -2729,3 +2729,8 @@ ADDITIONAL_PHOTOS.push(...[
   }
 ]);
 PHOTOS.push(...ADDITIONAL_PHOTOS);
+
+for (let number = 1; number <= 84; number++) {
+  const id = 'friday-' + String(number).padStart(3, '0');
+  PHOTOS.push({id, loc: 'يوم الجمعة', title: 'يوم الجمعة', url: 'assets/photos/friday/' + id + '.jpg', pos: 'center'});
+}

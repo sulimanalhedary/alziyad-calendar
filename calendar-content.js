@@ -127,7 +127,25 @@ const FRIDAY_MESSAGES=[
   "الحمد لله على بيت يؤوينا، وأهل نأنس بهم، ونعم لا نحصيها.",
   "اللهم اجعل أيامنا شاهدة لنا بالخير، وقلوبنا مطمئنة بذكرك.",
   "في الجمعة، خفف عن نفسك وعن غيرك؛ الرفق يجمّل تفاصيل الحياة.",
-  "اللهم احفظ بلادنا وأهلها، وأدم علينا الأمن والعافية."
+  "اللهم احفظ بلادنا وأهلها، وأدم علينا الأمن والعافية.",
+  "اللهم صلِّ وسلِّم على نبينا محمد.",
+  "اللهم صلِّ على محمد وعلى آل محمد.",
+  "اللهم صلِّ وسلِّم وبارك على نبينا محمد وعلى آله وصحبه.",
+  "صلى الله وسلّم على نبينا محمد، وعلى آله وأصحابه أجمعين.",
+  "اللهم صلِّ على محمد وأزواجه وذريته، وبارك على محمد وأزواجه وذريته.",
+  "من هدي الجمعة أن يغتسل الذاهب إلى صلاتها، ويتهيأ لها من أول يومه.",
+  "من آداب الجمعة أن يتطيّب الرجل قبل ذهابه إلى المسجد.",
+  "بكّر إلى صلاة الجمعة، واجعل لك وقتًا للصلاة والذكر قبل الخطبة.",
+  "إذا بدأ الخطيب فأنصت، ودَع الحديث حتى يفرغ من خطبته.",
+  "إذا دخلت المسجد فاجلس حيث يتيسّر لك، واحذر تخطّي رقاب المصلين.",
+  "أكثر يوم الجمعة من الصلاة والسلام على رسول الله ﷺ.",
+  "في الجمعة ساعة إجابة، فاسأل الله من فضله وادعُ لمن تحب.",
+  "اللهم اغفر لوالدينا، واجزهما عنّا خير ما جزيت والدًا عن ولده.",
+  "اللهم اكتب لمرضانا عافية، ولمن ضاق صدره سكينة وفرجًا.",
+  "يا رب، اجعل في بيوتنا مودة، وفي أرزاقنا بركة، وفي قلوبنا رضا.",
+  "اللهم أعنّا على ذكرك وشكرك وحسن عبادتك.",
+  "اللهم ارحم من افتقدناهم، وآنس وحشتهم، واجمعنا بهم في جناتك.",
+  "اللهم ارزقنا قولًا طيبًا، وعملًا متقبّلًا، وقلبًا سليمًا."
 ];
 const NATIONAL_DAY_MESSAGES=[
   "وطن نعتز به، ونحمد الله على أمنه وخيره. اللهم احفظ بلادنا وأهلها، وأدم علينا نعمة الأمن والوحدة والرخاء.",
@@ -143,15 +161,244 @@ function calendarDay(date){
 }
 function isFriday(date){return new Date(calendarDay(date)*DAY_MS).getUTCDay()===5}
 function isNationalDay(date){const day=new Date(calendarDay(date)*DAY_MS);return day.getUTCMonth()===8&&day.getUTCDate()===23}
-function messagePool(date,group){
- if(group==='works')return WORK_MESSAGES;
- if(group==='friday')return FRIDAY_MESSAGES;
- return isNationalDay(date)?NATIONAL_DAY_MESSAGES:GENERAL_MESSAGES;
+const WORK_THEMES={
+  "pool": [
+    "عند حافة المسبح يلتقي خط البلاط بسطح الماء، فيظهر انتظام القصّات على امتداد الحوض.",
+    "انعكاس الإنارة على الماء يرسم في المسبح خطًا ثانيًا من الضوء.",
+    "في تشطيب المسابح نقرأ حافة الحوض والممر المحيط به كتفصيل واحد."
+  ],
+  "ceiling": [
+    "يبدأ ترتيب السقف من توزيع الإنارة وفتحات التكييف قبل إقفال الجبس.",
+    "خط الضوء في السقف يقود العين من مدخل الفراغ إلى نهايته.",
+    "عند التقاء السقف بالجدار يظهر أثر استقامة الخط، ولو كان التفصيل بسيطًا."
+  ],
+  "interior": [
+    "في الممر، يبرز امتداد الأرضية حين تنتظم الفواصل على طول المسار.",
+    "نختار الخامة على ضوء المكان؛ فالسطح نفسه يتغيّر حضوره من زاوية إلى أخرى.",
+    "من المدخل إلى آخر الفراغ، تتكامل الأرضية والجدار والضوء في مشهد واحد."
+  ],
+  "wash": [
+    "في المغاسل المتجاورة، انتظام المسافات بين الأحواض جزء من جمال الصف كاملًا.",
+    "في سطح المغسلة نراجع موضع الخلاط بالنسبة إلى الحوض قبل اعتماد الفتحات."
+  ],
+  "land": [
+    "يأخذ الممر شكله من طريقة التقائه بالعشب، خصوصًا عند المنعطفات.",
+    "في الفناء نبدأ بمسار المشي بين الباب والجلسة، ثم نوزّع الزراعة حوله.",
+    "عند حافة الزراعة، يبرز الفرق بين ملمس الحجر وليونة العشب."
+  ],
+  "facade": [
+    "في الواجهات تُقرأ النِّسب من بعيد، ثم تظهر تفاصيل المداخل والفتحات عند الاقتراب.",
+    "نقرأ الواجهة من مستوى الشارع؛ من المدخل أولًا، ثم من تناسب الفتحات والكتل.",
+    "في الواجهة، يرسم البروز والارتداد حدود كل كتلة قبل أن يضيف اللون أثره."
+  ],
+  "site": [
+    "قبل أن تختفي تفاصيل التنفيذ خلف التشطيب، يأتي وقت القياس والتوثيق.",
+    "في الموقع تُراجَع العينة بجوار ما نُفّذ، وفي الضوء الذي ستُرى فيه الخامة.",
+    "من مرحلة إلى أخرى، تحفظ صورة الموقع تفاصيل يصعب الرجوع إليها بعد اكتمال العمل."
+  ],
+  "ornament": [
+    "في الزخرفة تتضح دقة التنفيذ عند تكرار الوحدة والتقاء أطرافها.",
+    "يعطي الضوء الجانبي للنقش عمقًا، ويُظهر حدود الزخرفة على السطح."
+  ],
+  "sunset": [
+    "في ضوء الغروب تبرز ملامس الأرض وتطول ظلال التفاصيل الصغيرة.",
+    "للمكان عند آخر النهار ألوان لا تظهر في ضوء الظهيرة."
+  ],
+  "prayer": [
+    "لامتداد الصفوف في المصلى إيقاع هادئ ترسمه خطوط السجاد."
+  ]
+};
+const WORK_PHOTO_THEMES=[
+  "land",
+  "site",
+  "site",
+  "site",
+  "ceiling",
+  "ceiling",
+  "pool",
+  "pool",
+  "pool",
+  "ceiling",
+  "interior",
+  "interior",
+  "interior",
+  "interior",
+  "interior",
+  "ceiling",
+  "ceiling",
+  "ceiling",
+  "facade",
+  "ceiling",
+  "interior",
+  "wash",
+  "wash",
+  "facade",
+  "facade",
+  "interior",
+  "facade",
+  "facade",
+  "interior",
+  "land",
+  "site",
+  "interior",
+  "interior",
+  "interior",
+  "interior",
+  "ceiling",
+  "pool",
+  "pool",
+  "facade",
+  "ceiling",
+  "ceiling",
+  "ceiling",
+  "interior",
+  "ceiling",
+  "ceiling",
+  "facade",
+  "land",
+  "interior",
+  "facade",
+  "site",
+  "site",
+  "site",
+  "ceiling",
+  "site",
+  "land",
+  "ornament",
+  "ceiling",
+  "site",
+  "ceiling",
+  "interior",
+  "interior",
+  "ceiling",
+  "ceiling",
+  "interior",
+  "land",
+  "ceiling",
+  "site",
+  "land",
+  "land",
+  "facade",
+  "ceiling",
+  "facade",
+  "facade",
+  "site",
+  "interior",
+  "interior",
+  "facade",
+  "interior",
+  "land",
+  "land",
+  "land",
+  "land",
+  "land",
+  "interior",
+  "land",
+  "land",
+  "pool",
+  "pool",
+  "land",
+  "land",
+  "pool",
+  "pool",
+  "facade",
+  "interior",
+  "ceiling",
+  "pool",
+  "land",
+  "site",
+  "facade",
+  "facade",
+  "site",
+  "facade",
+  "facade",
+  "site",
+  "interior",
+  "facade",
+  "site",
+  "site",
+  "site",
+  "land",
+  "site",
+  "facade",
+  "ceiling",
+  "site",
+  "site",
+  "site",
+  "facade",
+  "facade",
+  "facade",
+  "facade",
+  "land",
+  "site",
+  "sunset",
+  "sunset",
+  "sunset",
+  "facade",
+  "facade",
+  "facade",
+  "land",
+  "interior",
+  "pool",
+  "land",
+  "ceiling",
+  "site",
+  "ceiling",
+  "facade",
+  "site",
+  "facade",
+  "facade",
+  "facade",
+  "facade",
+  "ceiling",
+  "ceiling",
+  "ceiling",
+  "ceiling",
+  "facade",
+  "facade",
+  "facade",
+  "ornament",
+  "interior",
+  "prayer"
+];
+const CITY_MESSAGES={
+  "الرياض": [
+    "للرياض وجهٌ يتبدّل بين ضوء الصباح وأضواء المساء.",
+    "من تفاصيل الشارع تبدأ حكاية المدينة، قبل أن تلوح معالمها في الأفق.",
+    "صباح الرياض، وموعد جديد مع الطرق التي نعرفها ونحبها."
+  ],
+  "ثادق": [
+    "في ثادق متّسع للعين، وفسحة للخاطر.",
+    "من ثادق، صباحٌ طيّب يشبه بساطة اللقاء بأهل الديرة.",
+    "للأماكن القريبة من القلب أسماء قليلة الحروف؛ ثادق واحدة منها."
+  ],
+  "الدرعية": [
+    "في الدرعية يطول الوقوف عند التفاصيل الصغيرة في عمارة نجد.",
+    "للدرعية ألوان من الأرض، وظلال تتبدّل على الجدران مع سير النهار.",
+    "من الدرعية، حيث يلتقي يومنا بحكايات من سبقونا."
+  ]
+};
+function preferredMessages(group,photo){
+ if(group==='general')return CITY_MESSAGES[photo.loc]||[];
+ if(group!=='works')return [];
+ const number=photo.url?.match(/\/works\/work-(\d+)\.jpg$/)?.[1];
+ return WORK_THEMES[WORK_PHOTO_THEMES[Number(number)-1]]||[];
 }
-function messageFor(date,offset,group){
- const pool=messagePool(date,group);
+const ALL_WORK_MESSAGES=[...Object.values(WORK_THEMES).flat(),...WORK_MESSAGES];
+const ALL_GENERAL_MESSAGES=[...Object.values(CITY_MESSAGES).flat(),...GENERAL_MESSAGES];
+function messagePool(date,group,photo=currentPhoto()){
+ if(group==='friday')return FRIDAY_MESSAGES;
+ if(group==='general' && isNationalDay(date))return NATIONAL_DAY_MESSAGES;
+ const preferred=preferredMessages(group,photo);
+ const all=group==='works'?ALL_WORK_MESSAGES:ALL_GENERAL_MESSAGES;
+ return preferred.length?[...preferred,...all.filter(text=>!preferred.includes(text))]:all;
+}
+function messageFor(date,offset,group,photo=currentPhoto()){
+ const pool=messagePool(date,group,photo);
  const national=pool===NATIONAL_DAY_MESSAGES;
- const sequence=group==='friday'?Math.floor(calendarDay(date)/7):national?0:calendarDay(date);
+ const preferred=national?[]:preferredMessages(group,photo);
+ const day=calendarDay(date);
+ const sequence=preferred.length?day%preferred.length:group==='friday'?Math.floor(day/7):national?0:day;
  const label=group==='works'?'من أعمالنا':group==='friday'?'رسالة الجمعة':national?'رسالة اليوم الوطني':'رسالة اليوم';
  return {label,text:pool[((sequence+offset)%pool.length+pool.length)%pool.length]};
 }

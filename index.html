@@ -43,11 +43,13 @@ function currentPhoto(){let a=eligible(); if(!a.length) return PHOTOS[0]; let hi
 function applyCard(card){const p=currentPhoto(); card.style.backgroundImage=`url("${p.url}")`;card.style.backgroundPosition=p.pos||'center'; card.querySelectorAll('[data-place]').forEach(x=>x.textContent=p.loc);card.querySelectorAll('[data-weekday]').forEach(x=>x.textContent=week(today));card.querySelectorAll('[data-hijri]').forEach(x=>x.textContent=hijri(today));card.querySelectorAll('[data-greg]').forEach(x=>x.textContent=greg(today));card.querySelectorAll('[data-tiptype]').forEach(x=>x.textContent=messageFor(today,tipIndex,activeMessageGroup()).label);card.querySelectorAll('[data-tip]').forEach(x=>x.textContent=messageFor(today,tipIndex,activeMessageGroup()).text);card.querySelectorAll('[data-credit]').forEach(x=>x.textContent=p.credit||'')}
 let imageURL='', shareBlob=null, renderedPhoto=null, renderQueue=Promise.resolve();
 function render(){renderQueue=renderQueue.catch(()=>{}).then(async()=>{try{document.getElementById('photoError').textContent='';const blob=await buildShareBlob();shareBlob=blob;updateSelectionStatus();const url=URL.createObjectURL(blob);for(const card of [mainCard,snapCard]){card.replaceChildren();const img=document.createElement('img');img.src=url;img.alt=[week(today),hijri(today),greg(today),messageFor(today,tipIndex,activeMessageGroup()).label,messageFor(today,tipIndex,activeMessageGroup()).text].join(' • ');img.style.cssText='display:block;width:100%;height:100%;object-fit:cover';card.append(img)}if(typeof showPhotoSource==='function')showPhotoSource(renderedPhoto);if(imageURL)URL.revokeObjectURL(imageURL);imageURL=url;}catch(e){console.error('Calendar render:',e);shareBlob=null;if(imageURL)URL.revokeObjectURL(imageURL);imageURL='';document.getElementById('photoError').textContent='تعذر تحميل الصورة. تحقق من الاتصال أو اضغط تغيير الصورة.';if(!imageURL){for(const card of [mainCard,snapCard]){card.replaceChildren();const message=document.createElement('p');message.style.cssText='color:white;padding:24px;font-size:18px';message.textContent='تعذر تجهيز البطاقة. اضغط تغيير الصورة للمحاولة مجددًا.';card.append(message)}}}});return renderQueue}
+function resetAutoMessage(){if(document.getElementById('messageGroup').value==='auto')tipIndex=0}
 function moveImage(step){
  const photos=eligible();
  if(!photos.length)return;
  const index=photos.findIndex(photo=>photo.i===photoIndex);
  photoIndex=photos[(index+step+photos.length)%photos.length].i;
+ resetAutoMessage();
  render();
  rememberChoice();
 }
@@ -59,7 +61,7 @@ function activeMessageGroup(){
  return loc==='من أعمالنا'?'works':loc==='يوم الجمعة'?'friday':'general';
 }
 function nextTip(){tipIndex=(tipIndex+1)%messagePool(today,activeMessageGroup()).length;render()}
-function filterLoc(loc,btn){filter=loc;document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));btn.classList.add('active');photoIndex=eligible()[0].i;render()}
+function filterLoc(loc,btn){resetAutoMessage();filter=loc;document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));btn.classList.add('active');photoIndex=eligible()[0].i;render()}
 async function makeSnap(){snapWrap.classList.add('show');await renderQueue;snapWrap.scrollIntoView({behavior:'smooth',block:'start'})}
 function rounded(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
 function wrapText(ctx,text,x,y,maxWidth,lineHeight,maxLines=6){const words=text.split(' ');let line='',lines=[];for(const word of words){const test=line?line+' '+word:word;if(ctx.measureText(test).width>maxWidth&&line){lines.push(line);line=word}else line=test}if(line)lines.push(line);lines=lines.slice(0,maxLines);lines.forEach((l,i)=>ctx.fillText(l,x,y+i*lineHeight));return lines.length}
